@@ -21,7 +21,10 @@ permissions:
 jobs:
   build:
     name: Build IPA / TIPA
-    runs-on: macos-15          # Apple Silicon (M1)；如镜像不可用可改为 macos-14
+    # 必须是 macos-26：内嵌的 StikJIT 1.9.0 只提供文本 .swiftinterface，
+    # 该接口由 Swift 6.4 生成、用了 Swift 6.3 才引入的 "Module::Type" 语法，
+    # macos-15 上最新的 Xcode 26.3（Swift 6.2.4）解析不了（见下一步的说明）。
+    runs-on: macos-26          # Apple Silicon
     timeout-minutes: 360       # GitHub 单次任务上限 6 小时
 
     steps:
@@ -30,14 +33,39 @@ jobs:
         with:
           fetch-depth: 0       # package_ipa.sh 会读取 git commit 作为构建号
 
-      - name: Select newest Xcode
+      - name: Select Xcode 26.4 or newer
         run: |
           set -e
-          XC="$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)"
+          # HuskJITHelper 的部署目标是 iOS 26，所以至少需要 Xcode 26（含 iOS 26 SDK）。
+          # 但 26.0–26.3 不够：src/app/Frameworks 里的 StikJIT 1.9.0 只带文本
+          # .swiftinterface（没有二进制 .swiftmodule），而这份接口是 Swift 6.4
+          # 生成的、用了 Swift 6.3 才引入的双冒号模块选择器语法，例如
+          #   public struct DDIPaths : Swift::Sendable {
+          #   public enum StikJITError : Swift::Error, Foundation::LocalizedError {
+          # Xcode 26.0–26.3 携带的 Swift 6.2.x 解析不了它，会在打包 App 阶段报
+          #   "expected '{' in struct" / "expected '{' in enum" 然后 BUILD FAILED。
+          # Swift 6.3 起才认识该语法，所以这里强制挑选 Xcode 26.4 及以上。
+          XC=""
+          for cand in $(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V -r); do
+            ver="$(basename "$cand" | sed -E 's/^Xcode_([0-9]+(\.[0-9]+)*).*/\1/')"
+            major="${ver%%.*}"
+            rest="${ver#*.}"
+            minor="${rest%%.*}"
+            if [ "$major" -gt 26 ] || { [ "$major" -eq 26 ] && [ "$minor" -ge 4 ]; }; then
+              XC="$cand"
+              break
+            fi
+          done
+          if [ -z "$XC" ]; then
+            echo "::error::No Xcode 26.4+ on this image; StikJIT 1.9.0's Swift interface needs Swift 6.3+."
+            ls -d /Applications/Xcode*.app || true
+            exit 1
+          fi
           echo "Selecting $XC"
           sudo xcode-select -s "$XC/Contents/Developer"
           xcodebuild -version
-          # HuskJITHelper 的部署目标是 iOS 26，需要 Xcode 26（含 iOS 26 SDK）。
+          DEVELOPER_DIR="$XC/Contents/Developer" xcrun --find swiftc
+          swift --version
           xcodebuild -showsdks | grep -i iphoneos || true
 
       - name: Install build tools
