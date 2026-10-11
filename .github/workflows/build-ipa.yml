@@ -47,6 +47,13 @@ jobs:
           # xcodegen：必须安装，因为我们修改了 src/app/project.yml，需要重新生成工程。
           brew update -q || true
           brew install -q meson ninja pkg-config qemu xcodegen
+          # virglrenderer 的 meson 构建需要 PyYAML：gallium/meson.build 以
+          # modules: ['yaml'] 查找 python3。Homebrew 的 python3 默认不带 PyYAML，
+          # 缺了会在 configure 阶段直接报 "missing modules: yaml" 并中断整个构建。
+          # Homebrew 的 python3 是"外部管理"环境（PEP 668），所以要带
+          # --break-system-packages 才能安装。
+          python3 -m pip install --break-system-packages --quiet pyyaml
+          python3 -c "import yaml; print('PyYAML', yaml.__version__)"
           # Rust + iOS 目标（build_rppairing_ios.sh 使用）。运行器通常已预装 rustup。
           if ! command -v rustup >/dev/null 2>&1; then
             brew install -q rustup-init
