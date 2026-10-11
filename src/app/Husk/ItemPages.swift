@@ -23,7 +23,7 @@ private struct PageHero<Action: View>: View {
                             .font(.system(.title2, design: .rounded).weight(.heavy))
                             .lineLimit(2)
                             .minimumScaleFactor(0.8)
-                        Text(subtitle)
+                        Text(LocalizedStringKey(subtitle))
                             .font(.subheadline)
                             .foregroundStyle(.white.opacity(0.75))
                             .lineLimit(2)
@@ -51,7 +51,7 @@ private struct BigButton: View {
 
     var body: some View {
         Button(action: action) {
-            Label(title, systemImage: systemImage)
+            Label(LocalizedStringKey(title), systemImage: systemImage)
                 .font(.system(.headline, design: .rounded))
                 .frame(maxWidth: .infinity)
                 .frame(height: 50)
@@ -108,7 +108,7 @@ struct GamePage: View {
     private var blockedBy: String? {
         guard let loaded = husk_native_loaded_apk().map({ String(cString: $0) }), let apk = app.apks.first, loaded != apk
         else { return nil }
-        return store.apps.first { $0.apks.first == loaded }?.label ?? "Another game"
+        return store.apps.first { $0.apks.first == loaded }?.label ?? String(localized: "Another game")
     }
 
     private var preflight: AppDiagnosis? { AppDiagnosis.preflight(app) }
@@ -124,12 +124,9 @@ struct GamePage: View {
                 PageHero(item: .game(app), subtitle: subtitle) { primary }
             } footer: {
                 if isGeodeLauncher {
-                    Text("This is Geode's Android launcher. On Husk, Geode runs inside Geometry Dash instead: turn it on here "
-                       + "(or in Geometry Dash's settings, under Mods), then start Geometry Dash and use Geode's button on its "
-                       + "main menu to get mods. This APK supplies a library Geode needs, so keep it.")
+                    Text("This is Geode's Android launcher. On Husk, Geode runs inside Geometry Dash instead: turn it on here (or in Geometry Dash's settings, under Mods), then start Geometry Dash and use Geode's button on its main menu to get mods. This APK supplies a library Geode needs, so keep it.")
                 } else if let other = blockedBy {
-                    Text("\(other) is still loaded, and a game cannot be unloaded once it has started. Close Husk with the "
-                       + "button above, then open it again to play \(app.label).")
+                    Text(String(localized: "\(other) is still loaded, and a game cannot be unloaded once it has started. Close Husk with the button above, then open it again to play \(app.label)."))
                 } else if !runs {
                     Text("This APK has no 64-bit code Husk can run, so it will probably not start.")
                 }
@@ -176,20 +173,20 @@ struct GamePage: View {
                 } header: {
                     Text("Saves")
                 } footer: {
-                    if let savesMessage { Text(savesMessage) }
+                    if let savesMessage { Text(LocalizedStringKey(savesMessage)) }
                     else if loadedNow { Text("\(app.label) has been started in this run of Husk. Close Husk and open it again to restore saves.") }
                     else { Text("A backup is a .zip of everything \(app.label) has saved in Husk, to keep in Files or move to another device.") }
                 }
             }
 
             Section("About") {
-                LabeledContent("Runs With", value: app.report?.runnerName ?? "Unknown")
+                LabeledContent("Runs With", value: app.report?.runnerName ?? String(localized: "Unknown"))
                 if let st = GameStatusStore.shared.status(app.id) {
                     LabeledContent("Last Result") {
-                        Label(st.result.label, systemImage: st.result.symbol).foregroundStyle(st.result.color)
+                        Label(LocalizedStringKey(st.result.label), systemImage: st.result.symbol).foregroundStyle(st.result.color)
                     }
                 }
-                LabeledContent("Last Played", value: app.lastPlayed.map { $0.formatted(date: .abbreviated, time: .shortened) } ?? "Never")
+                LabeledContent("Last Played", value: app.lastPlayed.map { $0.formatted(date: .abbreviated, time: .shortened) } ?? String(localized: "Never"))
                 LabeledContent("Size", value: fileBytes(app.apks))
             }
 
@@ -222,7 +219,7 @@ struct GamePage: View {
                 exit(0)
             }
         } message: {
-            Text("\(blockedBy ?? "The other game") is still loaded and only one game can run per session. Husk closes; open it again and \(app.label) starts by itself.")
+            Text("\(blockedBy ?? String(localized: "The other game")) is still loaded and only one game can run per session. Husk closes; open it again and \(app.label) starts by itself.")
         }
         .confirmationDialog("Remove \(app.label)?", isPresented: $confirmRemove, titleVisibility: .visible) {
             Button("Remove", role: .destructive) {
@@ -299,7 +296,7 @@ struct GamePage: View {
             await MainActor.run {
                 savesBusy = false
                 switch result {
-                case .success(let n): savesMessage = "Restored \(n) file\(n == 1 ? "" : "s") from \(url.lastPathComponent)."
+                case .success(let n): savesMessage = String(localized: "Restored \(n) file(s) from \(url.lastPathComponent).")
                 case .failure(let e): savesMessage = e.localizedDescription
                 }
             }
@@ -329,7 +326,7 @@ struct GamePage: View {
             BigButton(title: "Close Husk to Play", systemImage: "xmark.circle", prominent: false) { confirmQuit = true }
         } else if !Launcher.jitOn {
             if jit.busy {
-                HStack(spacing: 10) { ProgressView(); Text(jit.status ?? "Turning on JIT…").foregroundStyle(.secondary) }
+                HStack(spacing: 10) { ProgressView(); Text(LocalizedStringKey(jit.status ?? "Turning on JIT…")).foregroundStyle(.secondary) }
                     .frame(maxWidth: .infinity).frame(height: 50)
             } else {
                 BigButton(title: "Turn On JIT to Play", systemImage: "bolt.fill", action: turnOnJIT)
@@ -480,7 +477,7 @@ struct AndroidSystemPage: View {
                     }
                 }
             } footer: {
-                if let note { Text(note) }
+                if let note { Text(LocalizedStringKey(note)) }
             }
             .heroRow()
 
@@ -488,7 +485,7 @@ struct AndroidSystemPage: View {
                 Section {
                     Button { router.openFiles(at: FilesTab.root) } label: { Label("Files", systemImage: "folder") }
                     Button { runner.saveState(reason: "asked from the Android page") } label: {
-                        Label(runner.isSavingState ? "Saving…" : "Save Android Now", systemImage: "externaldrive.badge.checkmark")
+                        Label(LocalizedStringKey(runner.isSavingState ? "Saving…" : "Save Android Now"), systemImage: "externaldrive.badge.checkmark")
                     }
                     .disabled(runner.isSavingState)
                 } footer: {
@@ -504,8 +501,7 @@ struct AndroidSystemPage: View {
             }
 
             Section {
-                Text("Android runs fully emulated, so it is slower than games on the translation layer. Use it for apps "
-                   + "Husk cannot run directly, like Termux or app stores.")
+                Text("Android runs fully emulated, so it is slower than games on the translation layer. Use it for apps Husk cannot run directly, like Termux or app stores.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
             }
@@ -519,12 +515,12 @@ struct AndroidSystemPage: View {
     private var status: String {
         if running {
             if host.isReady { return "Running" }
-            return runner.setupMessage ?? (runner.bootProgress > 0 ? "Starting · \(runner.bootProgress)%" : "Starting…")
+            return runner.setupMessage ?? (runner.bootProgress > 0 ? String(localized: "Starting · \(String(format: "%d%%", runner.bootProgress))") : "Starting…")
         }
         switch guest.state {
         case .missing: return "Not downloaded yet"
         case .downloading(_, let received, let total):
-            return "Downloading · \(bytes(received)) of \(total > 0 ? bytes(total) : "…")"
+            return String(localized: "Downloading · \(bytes(received)) of \(total > 0 ? bytes(total) : "…")")
         case .installing: return "Installing…"
         case .failed: return "Something went wrong"
         case .ready: return Launcher.jitOn ? "Ready to start" : "Needs JIT to start"
@@ -570,7 +566,7 @@ struct AndroidSystemPage: View {
                 BigButton(title: "Try Again", systemImage: "arrow.clockwise") { JITBootstrap.prewarm(); guest.download() }
             case .ready:
                 if jit.busy {
-                    HStack(spacing: 10) { ProgressView(); Text(jit.status ?? "Turning on JIT…").foregroundStyle(.secondary) }
+                    HStack(spacing: 10) { ProgressView(); Text(LocalizedStringKey(jit.status ?? "Turning on JIT…")).foregroundStyle(.secondary) }
                         .frame(maxWidth: .infinity).frame(height: 50)
                 } else {
                     BigButton(title: Launcher.jitOn ? "Start Android" : "Turn On JIT", systemImage: Launcher.jitOn ? "power" : "bolt.fill") {

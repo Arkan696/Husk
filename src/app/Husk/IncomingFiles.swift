@@ -59,7 +59,7 @@ final class IncomingFiles: ObservableObject {
 
     /// Copy files to Husk's own folder, off the main thread -- a game can be gigabytes -- then hand back the copies.
     private func take(_ urls: [URL], then: @escaping @MainActor ([URL]) -> Void) {
-        preparing = urls.count == 1 ? "Preparing \(urls[0].lastPathComponent)…" : "Preparing \(urls.count) files…"
+        preparing = urls.count == 1 ? String(localized: "Preparing \(urls[0].lastPathComponent)…") : String(localized: "Preparing \(urls.count) files…")
         Task.detached(priority: .userInitiated) {
             var copies: [URL] = []
             for url in urls {
@@ -124,14 +124,14 @@ struct IncomingChooser: View {
 
     private var title: String {
         guard let first = incoming.waiting.first else { return "" }
-        return incoming.waiting.count == 1 ? first.lastPathComponent : "\(incoming.waiting.count) files"
+        return incoming.waiting.count == 1 ? first.lastPathComponent : String(localized: "\(incoming.waiting.count) files")
     }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Add to Husk").font(.title2.weight(.bold))
-                Text(title).font(.subheadline).foregroundStyle(.secondary).lineLimit(2)
+                Text(LocalizedStringKey(title)).font(.subheadline).foregroundStyle(.secondary).lineLimit(2)
             }
 
             choice(icon: "bolt.fill", title: "Translation Layer",
@@ -165,8 +165,8 @@ struct IncomingChooser: View {
                     .frame(width: 44, height: 44)
                     .background(Color.accentColor.opacity(0.14), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(title).font(.headline).foregroundStyle(.primary)
-                    Text(detail).font(.subheadline).foregroundStyle(.secondary)
+                    Text(LocalizedStringKey(title)).font(.headline).foregroundStyle(.primary)
+                    Text(LocalizedStringKey(detail)).font(.subheadline).foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer(minLength: 0)

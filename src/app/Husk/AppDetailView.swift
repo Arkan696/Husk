@@ -99,7 +99,7 @@ struct AppDetailView: View {
                 } label: {
                     HStack {
                         Spacer()
-                        Label(canOpen ? "Launch" : "Starting Android…",
+                        Label(LocalizedStringKey(canOpen ? "Launch" : "Starting Android…"),
                               systemImage: canOpen ? "play.fill" : "hourglass")
                             .font(.headline)
                         Spacer()
@@ -116,7 +116,7 @@ struct AppDetailView: View {
             Section {
                 LabeledContent("Version", value: live.version ?? "—")
                 LabeledContent("Size", value: live.sizeBytes.map(Self.bytes) ?? "—")
-                LabeledContent("Last Used", value: live.lastUsed.map(Self.when) ?? "Never from Husk")
+                LabeledContent("Last Used", value: live.lastUsed.map(Self.when) ?? String(localized: "Never from Husk"))
             }
 
             Section {
@@ -145,8 +145,7 @@ struct AppDetailView: View {
             }
             Button("Cancel", role: .cancel) { }
         } message: {
-            Text("Its data goes with it. Save Android afterwards or the change is "
-               + "lost on the next launch.")
+            Text("Its data goes with it. Save Android afterwards or the change is lost on the next launch.")
         }
     }
 

@@ -1782,8 +1782,10 @@ final class QemuRunner: ObservableObject {
                             Task { @MainActor in
                                 let r = QemuRunner.shared
                                 if percent > r.bootProgress { r.bootProgress = percent }
+                                let stage = NSLocalizedString(milestone, comment: "Android boot stage shown on the launch screen")
+                                let pct = String(format: "%d%%", r.bootProgress)
                                 r.setupMessage =
-                                    "\(r.bootProgress)%  ·  \(milestone)  ·  \(stamp) elapsed"
+                                    String(localized: "\(pct)  ·  \(stage)  ·  \(stamp) elapsed")
                             }
                             break
                         }

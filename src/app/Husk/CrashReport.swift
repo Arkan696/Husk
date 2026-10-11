@@ -174,11 +174,11 @@ struct CrashReportSheet: View {
                         Image(systemName: "exclamationmark.triangle.fill")
                             .font(.system(size: 30)).foregroundStyle(.orange)
                         VStack(alignment: .leading, spacing: 3) {
-                            Text(report.cause.title).font(.title3.weight(.semibold))
+                            Text(LocalizedStringKey(report.cause.title)).font(.title3.weight(.semibold))
                             Text(report.game).foregroundStyle(.secondary)
                         }
                     }
-                    Text(report.cause.detail).font(.callout)
+                    Text(LocalizedStringKey(report.cause.detail)).font(.callout)
 
                     if !report.excerpt.isEmpty {
                         VStack(alignment: .leading, spacing: 6) {

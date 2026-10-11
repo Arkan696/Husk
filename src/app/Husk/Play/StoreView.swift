@@ -32,7 +32,7 @@ struct StoreView: View {
                     if manager.isSignedIn {
                         Menu {
                             if let s = manager.session {
-                                Text(s.isAnonymous ? "Guest Account (Aurora)" : s.email)
+                                Text(LocalizedStringKey(s.isAnonymous ? "Guest Account (Aurora)" : s.email))
                                     .font(.caption)
                                 if s.isAnonymous {
                                     Text(s.email).font(.caption2).foregroundStyle(.secondary)
@@ -88,7 +88,7 @@ struct StoreView: View {
             )) {
                 Button("OK", role: .cancel) { manager.errorMessage = nil }
             } message: {
-                Text(manager.errorMessage ?? "")
+                Text(LocalizedStringKey(manager.errorMessage ?? ""))
             }
         }
     }
@@ -118,7 +118,7 @@ struct StoreView: View {
             if manager.isLoading {
                 VStack(spacing: 12) {
                     ProgressView()
-                    Text(manager.statusMessage ?? "Signing in…")
+                    Text(LocalizedStringKey(manager.statusMessage ?? "Signing in…"))
                         .font(.footnote)
                         .foregroundStyle(Theme.textDim)
                 }
@@ -297,7 +297,7 @@ struct StoreView: View {
                 Button {
                     manager.downloadAndInstall(app: app)
                 } label: {
-                    Text(app.isFree ? "GET" : app.formattedPrice)
+                    Text(LocalizedStringKey(app.isFree ? "GET" : app.formattedPrice))
                         .font(.subheadline.weight(.bold))
                         .padding(.horizontal, 14)
                         .padding(.vertical, 6)
@@ -435,7 +435,7 @@ struct PlayAppDetailSheet: View {
                     manager.downloadAndInstall(app: app)
                     dismiss()
                 } label: {
-                    Text(app.isFree ? "GET" : app.formattedPrice)
+                    Text(LocalizedStringKey(app.isFree ? "GET" : app.formattedPrice))
                         .font(.headline)
                         .padding(.horizontal, 24)
                         .padding(.vertical, 6)
@@ -448,10 +448,10 @@ struct PlayAppDetailSheet: View {
 
     private func metricItem(title: String, value: String) -> some View {
         VStack(spacing: 4) {
-            Text(value)
+            Text(LocalizedStringKey(value))
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(Theme.text)
-            Text(title)
+            Text(LocalizedStringKey(title))
                 .font(.caption2)
                 .foregroundStyle(Theme.textDim)
         }

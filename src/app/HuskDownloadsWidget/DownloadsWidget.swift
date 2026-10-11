@@ -25,14 +25,14 @@ struct DownloadActivityWidget: Widget {
                     Image(systemName: stateIcon(context.state)).font(.title2).foregroundStyle(stateTint(context.state))
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    Text(statePercent(context.state)).font(.headline.monospacedDigit())
+                    Text(LocalizedStringKey(statePercent(context.state))).font(.headline.monospacedDigit())
                 }
                 DynamicIslandExpandedRegion(.bottom) {
                     VStack(alignment: .leading, spacing: 6) {
                         Text(context.state.title).font(.subheadline.weight(.semibold)).lineLimit(1)
                         Bar(state: context.state)
                         HStack {
-                            Text(stateDetail(context.state)).font(.caption).foregroundStyle(.secondary)
+                            Text(LocalizedStringKey(stateDetail(context.state))).font(.caption).foregroundStyle(.secondary)
                             Spacer()
                             TimeLeft(state: context.state)
                         }
@@ -41,7 +41,7 @@ struct DownloadActivityWidget: Widget {
             } compactLeading: {
                 Image(systemName: stateIcon(context.state)).foregroundStyle(stateTint(context.state))
             } compactTrailing: {
-                Text(statePercent(context.state)).font(.caption.monospacedDigit())
+                Text(LocalizedStringKey(statePercent(context.state))).font(.caption.monospacedDigit())
             } minimal: {
                 Image(systemName: stateIcon(context.state)).foregroundStyle(stateTint(context.state))
             }
@@ -58,11 +58,11 @@ private struct LockScreenView: View {
                 Image(systemName: stateIcon(state)).foregroundStyle(stateTint(state))
                 Text(state.title).font(.headline).lineLimit(1)
                 Spacer()
-                Text(statePercent(state)).font(.headline.monospacedDigit())
+                Text(LocalizedStringKey(statePercent(state))).font(.headline.monospacedDigit())
             }
             Bar(state: state)
             HStack {
-                Text(stateDetail(state)).font(.caption).foregroundStyle(.secondary)
+                Text(LocalizedStringKey(stateDetail(state))).font(.caption).foregroundStyle(.secondary)
                 Spacer()
                 TimeLeft(state: state)
             }
@@ -109,10 +109,10 @@ private func statePercent(_ s: HuskDownloadAttributes.ContentState) -> String {
 private func stateDetail(_ s: HuskDownloadAttributes.ContentState) -> String {
     let f = ByteCountFormatter()
     if s.failed { return "Stopped. Open Husk to retry." }
-    if s.finished { return "\(f.string(fromByteCount: s.total)) downloaded" }
-    var text = "\(f.string(fromByteCount: s.received)) of \(f.string(fromByteCount: s.total))"
-    if s.speed > 1 { text += " · \(f.string(fromByteCount: Int64(s.speed)))/s" }
-    if s.filesTotal > 1 { text += " · \(s.filesDone)/\(s.filesTotal) files" }
+    if s.finished { return String(localized: "\(f.string(fromByteCount: s.total)) downloaded") }
+    var text = String(localized: "\(f.string(fromByteCount: s.received)) of \(f.string(fromByteCount: s.total))")
+    if s.speed > 1 { text += String(localized: " · \(f.string(fromByteCount: Int64(s.speed)))/s") }
+    if s.filesTotal > 1 { text += String(localized: " · \(s.filesDone)/\(s.filesTotal) files") }
     return text
 }
 

@@ -1,0 +1,1431 @@
+{
+  "Husk/AppDetailView.swift": [
+    [
+      "NONLIT",
+      102,
+      "Label(canOpen ? \"Launch\" : \"Starting Android…\","
+    ],
+    [
+      "NONLIT",
+      130,
+      "Button(role: .destructive) { confirmUninstall = true } label: {"
+    ],
+    [
+      "NONLIT",
+      137,
+      ".navigationTitle(live.label)"
+    ],
+    [
+      "CONCAT",
+      149,
+      "+ \"lost on the next launch.\")"
+    ],
+    [
+      "NONLIT",
+      165,
+      "Button(role: .destructive) { confirmUninstall = true } label: {"
+    ],
+    [
+      "NONLIT",
+      178,
+      "Text(live.label)"
+    ],
+    [
+      "NONLIT",
+      181,
+      "Text(live.name)"
+    ]
+  ],
+  "Husk/AppDiagnosis.swift": [
+    [
+      "CONCAT",
+      50,
+      "detail: \"This file is not an app Husk can read\" + (r.error.map { \": \\($0).\" } ?? \".\")"
+    ],
+    [
+      "CONCAT",
+      51,
+      "+ \" It may be damaged, only partly downloaded, or not an Android app at all.\","
+    ],
+    [
+      "CONCAT",
+      56,
+      "detail: r.summary + \" iPhones run 64-bit ARM (arm64) code. Look for an arm64 or universal build of this app.\","
+    ],
+    [
+      "CONCAT",
+      57,
+      "evidence: \"ABIs: \" + r.abis.joined(separator: \", \"))"
+    ],
+    [
+      "CONCAT",
+      62,
+      "+ \"resources are missing. Import the whole bundle (.apks, .xapk or .apkm), or get it from Husk's store.\","
+    ],
+    [
+      "CONCAT",
+      68,
+      "+ \"Android phone and closes the app otherwise, so it may not start in Husk.\","
+    ],
+    [
+      "CONCAT",
+      91,
+      "+ \"that Husk does not provide yet, or does something iOS does not allow.\","
+    ],
+    [
+      "CONCAT",
+      104,
+      "+ \"they find they are not on a certified Android phone, which Husk cannot pretend to be for them.\","
+    ],
+    [
+      "CONCAT",
+      125,
+      "detail: \"Its code stopped with \\(short)\" + (firstPart.isEmpty ? \".\" : \": \\(firstPart.prefix(220))\"),"
+    ],
+    [
+      "CONCAT",
+      148,
+      "+ \"can answer for. Apps that only use Google's libraries run; this one stops without the real services.\","
+    ],
+    [
+      "NONLIT",
+      174,
+      "Text(diagnosis.title).font(.subheadline.weight(.semibold))"
+    ],
+    [
+      "NONLIT",
+      175,
+      "Text(diagnosis.detail).font(.footnote).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)"
+    ],
+    [
+      "NONLIT",
+      177,
+      "Text(e).font(.system(size: 10.5, design: .monospaced)).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      199,
+      "Text(app.label).font(.footnote.weight(.semibold)).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      206,
+      "Button(action: close) { Text(\"Close\").frame(maxWidth: .infinity) }"
+    ]
+  ],
+  "Husk/AppWindows.swift": [
+    [
+      "NONLIT",
+      184,
+      "Text(model.statusText).font(.subheadline.weight(.semibold)).foregroundStyle(.white)"
+    ],
+    [
+      "NONLIT",
+      186,
+      "ProgressView().tint(.white)"
+    ],
+    [
+      "NONLIT",
+      211,
+      "Text(app.label).font(.footnote.weight(.semibold)).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      225,
+      "Button(action: action) {"
+    ],
+    [
+      "NONLIT",
+      309,
+      "Button(role: .destructive) { windows.close() } label: { Label(\"Close\", systemImage: \"xmark\") }"
+    ]
+  ],
+  "Husk/BootScreen.swift": [
+    [
+      "NONLIT",
+      69,
+      "Text(Self.phrases[phrase % Self.phrases.count])"
+    ],
+    [
+      "NONLIT",
+      87,
+      "Text(runner.setupMessage ?? host.status)"
+    ],
+    [
+      "NONLIT",
+      126,
+      "Text(shown > 0 ? \"\\(shown)%\" : \"starting\")"
+    ],
+    [
+      "NONLIT",
+      131,
+      "Text(left)"
+    ]
+  ],
+  "Husk/ContentView.swift": [
+    [
+      "NONLIT",
+      185,
+      ".alert(guest.update.title, isPresented: Binding("
+    ],
+    [
+      "NONLIT",
+      191,
+      "Text(guest.update.detail)"
+    ],
+    [
+      "NONLIT",
+      366,
+      "ProgressView(value: Double(runner.bootProgress), total: 100)"
+    ],
+    [
+      "NONLIT",
+      369,
+      "Text(runner.setupMessage ?? \"Starting Android…\")"
+    ],
+    [
+      "NONLIT",
+      437,
+      "Label(rotated ? \"Unrotate picture\" : \"Rotate picture\","
+    ],
+    [
+      "NONLIT",
+      444,
+      "Label(runner.isSavingState ? \"Saving…\" : \"Save Android\","
+    ],
+    [
+      "NONLIT",
+      499,
+      "Text(line)"
+    ],
+    [
+      "CONCAT",
+      609,
+      "+ \"through to Android yet.\")"
+    ],
+    [
+      "NONLIT",
+      630,
+      "Text(title)"
+    ]
+  ],
+  "Husk/CrashReport.swift": [
+    [
+      "NONLIT",
+      177,
+      "Text(report.cause.title).font(.title3.weight(.semibold))"
+    ],
+    [
+      "NONLIT",
+      178,
+      "Text(report.game).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      181,
+      "Text(report.cause.detail).font(.callout)"
+    ],
+    [
+      "NONLIT",
+      186,
+      "Text(report.excerpt.joined(separator: \"\\n\"))"
+    ]
+  ],
+  "Husk/DiscoverTab.swift": [
+    [
+      "NONLIT",
+      78,
+      "Text(url).font(.footnote).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      79,
+      "Text(manager.fetchErrors[url] ?? \"\").font(.caption).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      109,
+      "Text(source.name)"
+    ],
+    [
+      "NONLIT",
+      125,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      132,
+      "Text(app.name).font(.body.weight(.medium)).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      133,
+      "Text(app.localizedDescription)"
+    ],
+    [
+      "NONLIT",
+      191,
+      "Text(name).foregroundStyle(.primary)"
+    ],
+    [
+      "NONLIT",
+      192,
+      "Text(url).font(.caption2).foregroundStyle(.secondary).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      233,
+      "Text(source.name).font(.body.weight(.medium))"
+    ],
+    [
+      "NONLIT",
+      236,
+      "Text(url).font(.caption2).foregroundStyle(.secondary).lineLimit(1)"
+    ]
+  ],
+  "Husk/DownloadsTab.swift": [
+    [
+      "NONLIT",
+      28,
+      "Button(role: .destructive) { downloads.remove(job.id) } label: { Label(\"Remove\", systemImage: \"trash\") }"
+    ],
+    [
+      "NONLIT",
+      71,
+      "Label(guest.update.title, systemImage: \"shippingbox.fill\")"
+    ],
+    [
+      "NONLIT",
+      111,
+      "Text(job.title).font(.headline).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      122,
+      "if !job.complete { ProgressView(value: fraction) }"
+    ],
+    [
+      "NONLIT",
+      123,
+      "Text(status).font(.caption).foregroundStyle(job.failed ? Color.orange : Color.secondary).lineLimit(2)"
+    ],
+    [
+      "NONLIT",
+      144,
+      "if let problem = downloads.problem { Text(problem).foregroundStyle(.orange) }"
+    ],
+    [
+      "NONLIT",
+      164,
+      "if working { ProgressView() } else {"
+    ]
+  ],
+  "Husk/FilesTab.swift": [
+    [
+      "NONLIT",
+      57,
+      "Text(path).font(.footnote).lineLimit(1).truncationMode(.head)"
+    ],
+    [
+      "NONLIT",
+      65,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      74,
+      ".navigationTitle(title)"
+    ],
+    [
+      "NONLIT",
+      134,
+      "Text(title).lineLimit(1).truncationMode(.middle)"
+    ],
+    [
+      "NONLIT",
+      136,
+      "Text(subtitle).font(.caption).foregroundStyle(.secondary).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      151,
+      "ProgressView(value: Double(used(s)))"
+    ],
+    [
+      "CONCAT",
+      225,
+      "+ \"Unmodified APKs install from here too.\")"
+    ]
+  ],
+  "Husk/HuskKeyboard.swift": [
+    [
+      "NONLIT",
+      247,
+      "Text(label)"
+    ]
+  ],
+  "Husk/IncomingFiles.swift": [
+    [
+      "NONLIT",
+      134,
+      "Text(title).font(.subheadline).foregroundStyle(.secondary).lineLimit(2)"
+    ],
+    [
+      "NONLIT",
+      160,
+      "Button(action: action) {"
+    ],
+    [
+      "NONLIT",
+      168,
+      "Text(title).font(.headline).foregroundStyle(.primary)"
+    ],
+    [
+      "NONLIT",
+      169,
+      "Text(detail).font(.subheadline).foregroundStyle(.secondary)"
+    ]
+  ],
+  "Husk/ItemPages.swift": [
+    [
+      "NONLIT",
+      22,
+      "Text(item.title)"
+    ],
+    [
+      "NONLIT",
+      26,
+      "Text(subtitle)"
+    ],
+    [
+      "NONLIT",
+      53,
+      "Button(action: action) {"
+    ],
+    [
+      "NONLIT",
+      54,
+      "Label(title, systemImage: systemImage)"
+    ],
+    [
+      "CONCAT",
+      128,
+      "+ \"(or in Geometry Dash's settings, under Mods), then start Geometry Dash and use Geode's button on its \""
+    ],
+    [
+      "CONCAT",
+      132,
+      "+ \"button above, then open it again to play \\(app.label).\")"
+    ],
+    [
+      "NONLIT",
+      179,
+      "if let savesMessage { Text(savesMessage) }"
+    ],
+    [
+      "NONLIT",
+      189,
+      "Label(st.result.label, systemImage: st.result.symbol).foregroundStyle(st.result.color)"
+    ],
+    [
+      "NONLIT",
+      197,
+      "Button(role: .destructive) { confirmRemove = true } label: {"
+    ],
+    [
+      "NONLIT",
+      203,
+      ".navigationTitle(app.label)"
+    ],
+    [
+      "NONLIT",
+      332,
+      "HStack(spacing: 10) { ProgressView(); Text(jit.status ?? \"Turning on JIT…\").foregroundStyle(.secondary) }"
+    ],
+    [
+      "NONLIT",
+      401,
+      "Button(role: .destructive) { confirmUninstall = true } label: {"
+    ],
+    [
+      "NONLIT",
+      410,
+      ".navigationTitle(live.label)"
+    ],
+    [
+      "NONLIT",
+      432,
+      "if runner.bootProgress > 0 { ProgressView(value: Double(runner.bootProgress), total: 100) }"
+    ],
+    [
+      "NONLIT",
+      479,
+      "if let progress { ProgressView(value: progress) }"
+    ],
+    [
+      "NONLIT",
+      483,
+      "if let note { Text(note) }"
+    ],
+    [
+      "NONLIT",
+      491,
+      "Label(runner.isSavingState ? \"Saving…\" : \"Save Android Now\", systemImage: \"externaldrive.badge.checkmark\")"
+    ],
+    [
+      "CONCAT",
+      508,
+      "+ \"Husk cannot run directly, like Termux or app stores.\")"
+    ],
+    [
+      "NONLIT",
+      568,
+      "ProgressView().frame(height: 50)"
+    ],
+    [
+      "NONLIT",
+      573,
+      "HStack(spacing: 10) { ProgressView(); Text(jit.status ?? \"Turning on JIT…\").foregroundStyle(.secondary) }"
+    ]
+  ],
+  "Husk/JITCard.swift": [
+    [
+      "NONLIT",
+      48,
+      "Text(jit.busy ? (jit.status ?? \"Turning on JIT…\") : \"Games need it. \\(offered == .builtIn ? \"StikJIT\" : offered.title) turns it on.\")"
+    ],
+    [
+      "NONLIT",
+      56,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      73,
+      "Text(error).font(.caption).foregroundStyle(.orange).fixedSize(horizontal: false, vertical: true)"
+    ],
+    [
+      "NONLIT",
+      127,
+      "Text(offered == .builtIn ? \"StikJIT\" : offered.title).font(.title3.weight(.semibold))"
+    ],
+    [
+      "NONLIT",
+      133,
+      "Text(explanation)"
+    ],
+    [
+      "NONLIT",
+      138,
+      "Text(why).font(.footnote).foregroundStyle(.orange)"
+    ],
+    [
+      "NONLIT",
+      143,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      144,
+      "Text(jit.status ?? \"Turning on JIT…\").font(.subheadline).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      154,
+      "Label(buttonTitle, systemImage: \"bolt.fill\")"
+    ],
+    [
+      "NONLIT",
+      164,
+      "Text(error).font(.footnote).foregroundStyle(.orange)"
+    ]
+  ],
+  "Husk/JITSetupView.swift": [
+    [
+      "NONLIT",
+      113,
+      "Button(action: action) {"
+    ],
+    [
+      "NONLIT",
+      121,
+      "Text(title).font(.system(size: 16, weight: .semibold)).foregroundStyle(Theme.text)"
+    ],
+    [
+      "NONLIT",
+      122,
+      "Text(detail).font(.system(size: 13)).foregroundStyle(Theme.textDim)"
+    ],
+    [
+      "NONLIT",
+      189,
+      "ProgressView().tint(Theme.accent)"
+    ],
+    [
+      "CONCAT",
+      199,
+      "+ \"so go to Settings straight away.\")"
+    ],
+    [
+      "NONLIT",
+      210,
+      "Text(pin).font(.system(size: 40, weight: .bold, design: .monospaced)).tracking(6)"
+    ],
+    [
+      "NONLIT",
+      268,
+      "Button(LocalDevVPN.actionTitle) { LocalDevVPN.open() }"
+    ],
+    [
+      "NONLIT",
+      292,
+      "ProgressView().tint(Theme.accent)"
+    ],
+    [
+      "NONLIT",
+      293,
+      "Text(jit.status ?? \"Working…\").font(.system(size: 14)).foregroundStyle(Theme.text)"
+    ],
+    [
+      "NONLIT",
+      303,
+      "Button(OnDevicePairing.isSupported ? \"Pair again\" : \"Import a new pairing file\") {"
+    ],
+    [
+      "NONLIT",
+      309,
+      "Button(LocalDevVPN.actionTitle) { LocalDevVPN.open() }"
+    ],
+    [
+      "CONCAT",
+      380,
+      "+ \"and Husk was installed through it.\", systemImage: \"info.circle\")"
+    ],
+    [
+      "NONLIT",
+      439,
+      "Text(title).font(.system(size: 28, weight: .semibold)).foregroundStyle(Theme.text)"
+    ],
+    [
+      "NONLIT",
+      440,
+      "Text(subtitle).font(.system(size: 15)).foregroundStyle(Theme.textDim)"
+    ],
+    [
+      "NONLIT",
+      471,
+      "Text(.init(text))"
+    ],
+    [
+      "NONLIT",
+      480,
+      "Label(text, systemImage: ok ? \"checkmark.circle.fill\" : \"exclamationmark.triangle.fill\")"
+    ]
+  ],
+  "Husk/Launcher.swift": [
+    [
+      "NONLIT",
+      178,
+      "Text(error).font(.caption).foregroundStyle(.orange).fixedSize(horizontal: false, vertical: true)"
+    ],
+    [
+      "NONLIT",
+      256,
+      "Text(item.title)"
+    ],
+    [
+      "NONLIT",
+      260,
+      "Text(item.usedText ?? (item.isGame ? \"Ready to play\" : \"Ready to open\"))"
+    ],
+    [
+      "NONLIT",
+      270,
+      "Button(action: play) {"
+    ],
+    [
+      "NONLIT",
+      305,
+      "Button(action: tap) {"
+    ],
+    [
+      "NONLIT",
+      311,
+      "if jit.busy { ProgressView() }"
+    ],
+    [
+      "NONLIT",
+      314,
+      "Text(isOn ? \"JIT on\" : \"JIT off\").font(.headline).foregroundStyle(.primary)"
+    ],
+    [
+      "NONLIT",
+      315,
+      "Text(isOn ? \"via \\(via)\" : jit.busy ? (jit.status ?? \"Turning on…\") : \"Tap to turn on\")"
+    ],
+    [
+      "NONLIT",
+      360,
+      "Text(status).font(.footnote).foregroundStyle(.secondary).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      393,
+      "Text(router.androidStarted ? \"Open\" : \"Start\")"
+    ],
+    [
+      "CONCAT",
+      436,
+      "+ \"straight on your iPhone. Other apps run inside Android.\")"
+    ],
+    [
+      "NONLIT",
+      457,
+      "Text(title).font(.system(.title3, design: .rounded).weight(.bold))"
+    ],
+    [
+      "NONLIT",
+      579,
+      "ForEach(LibraryFilter.allCases) { Text($0.title).tag($0) }"
+    ],
+    [
+      "NONLIT",
+      618,
+      "Text(title).font(.headline)"
+    ],
+    [
+      "NONLIT",
+      622,
+      "Text(empty).font(.subheadline).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      683,
+      "Text(title)"
+    ],
+    [
+      "NONLIT",
+      689,
+      "Text(caption).font(.caption2).foregroundStyle(.secondary).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      706,
+      "Button(action: action) {"
+    ],
+    [
+      "NONLIT",
+      723,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      724,
+      "Text(text).font(.subheadline).lineLimit(2)"
+    ],
+    [
+      "NONLIT",
+      744,
+      "TextField(prompt, text: $text)"
+    ]
+  ],
+  "Husk/OnboardingView.swift": [
+    [
+      "NONLIT",
+      79,
+      "Text(LocalizedStringKey(page < pages - 1 ? \"Continue\" : \"Start using Husk\"))"
+    ],
+    [
+      "NONLIT",
+      160,
+      "Text(title).font(.body.weight(.medium))"
+    ],
+    [
+      "NONLIT",
+      161,
+      "Text(detail).font(.caption).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      195,
+      "Label(LocalizedStringKey(state), systemImage: \"checkmark.circle.fill\")"
+    ],
+    [
+      "NONLIT",
+      198,
+      "Button(LocalizedStringKey(jitState == nil ? \"Set Up StikJIT Now\" : \"Change JIT Setup\")) { settingUpJIT = true }"
+    ]
+  ],
+  "Husk/SettingsTab.swift": [
+    [
+      "NONLIT",
+      32,
+      "Toggle(isOn: $multitask) {"
+    ],
+    [
+      "CONCAT",
+      53,
+      "+ \"Each app can override this in its own settings.\")"
+    ],
+    [
+      "NONLIT",
+      85,
+      "Text(title)"
+    ],
+    [
+      "NONLIT",
+      86,
+      "Text(subtitle).font(.caption).foregroundStyle(.secondary).lineLimit(1)"
+    ],
+    [
+      "CONCAT",
+      128,
+      "+ \"has finished starting.\")"
+    ],
+    [
+      "NONLIT",
+      136,
+      "Label(working ? \"Refreshing…\" : \"Refresh from Android\","
+    ],
+    [
+      "CONCAT",
+      151,
+      "+ \"the version it draws. Re-fetching throws away Husk's copies and \""
+    ],
+    [
+      "NONLIT",
+      185,
+      "Text(gpuMode"
+    ],
+    [
+      "CONCAT",
+      218,
+      "+ \"saved — QEMU refuses to snapshot a machine with one — so every \""
+    ],
+    [
+      "NONLIT",
+      276,
+      "Text(customRes"
+    ],
+    [
+      "NONLIT",
+      306,
+      "Text(Self.presets[i].name).tag(i)"
+    ],
+    [
+      "CONCAT",
+      346,
+      "+ \"one cold boot, and the next save replaces the machine saved at \""
+    ],
+    [
+      "CONCAT",
+      355,
+      "+ \"in the pill at the bottom of the guest's screen; a gamepad \""
+    ],
+    [
+      "NONLIT",
+      399,
+      "Text(keepNetwork"
+    ],
+    [
+      "CONCAT",
+      409,
+      "+ \"on QEMU's own network. Nothing on your phone's network can see \""
+    ],
+    [
+      "NONLIT",
+      448,
+      "ForEach(JITMethod.allCases) { Text($0.title).tag($0) }"
+    ],
+    [
+      "NONLIT",
+      468,
+      "Text(jit.method == .automatic"
+    ],
+    [
+      "CONCAT",
+      469,
+      "? jit.automaticDescription + \" Built-in StikJIT needs iOS 26, LocalDevVPN, and a \""
+    ],
+    [
+      "NONLIT",
+      504,
+      "Text(why).font(.caption).foregroundStyle(.orange)"
+    ],
+    [
+      "CONCAT",
+      523,
+      "+ \"takes an attached debugger. There are two ways to get it: a \""
+    ],
+    [
+      "NONLIT",
+      534,
+      "Text(HuskBuiltInJIT.isAvailable"
+    ],
+    [
+      "CONCAT",
+      554,
+      "+ \"JIT region is held, because a debugger that iOS has suspended \""
+    ],
+    [
+      "CONCAT",
+      561,
+      "+ \"Split sets — a base APK plus its config pieces — must be picked \""
+    ],
+    [
+      "NONLIT",
+      597,
+      "Label(runner.isSavingState ? \"Saving…\" : \"Save now\","
+    ],
+    [
+      "CONCAT",
+      603,
+      "+ \"seconds rather than minutes. The picture freezes while it writes. \""
+    ],
+    [
+      "NONLIT",
+      609,
+      "Button(role: .destructive) { askWhichToDelete = true } label: {"
+    ],
+    [
+      "NONLIT",
+      614,
+      "Text(deleteResult).font(.caption).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      617,
+      "Text(QemuRunner.shared.hasSnapshot"
+    ],
+    [
+      "CONCAT",
+      631,
+      "+ \"software renderer, so it is not used on GPU — which cold-boots \""
+    ],
+    [
+      "CONCAT",
+      639,
+      "+ \"Never asked before Android has been downloaded.\")"
+    ],
+    [
+      "NONLIT",
+      678,
+      "ForEach(Theme.Appearance.allCases) { Text($0.title).tag($0) }"
+    ],
+    [
+      "CONCAT",
+      688,
+      "+ \"screen stays dark either way — it is a picture of another phone.\")"
+    ],
+    [
+      "NONLIT",
+      730,
+      "Text(icon.title)"
+    ],
+    [
+      "CONCAT",
+      745,
+      "+ \"one look. iOS shows its own confirmation after a change; that alert cannot be turned off.\")"
+    ],
+    [
+      "NONLIT",
+      799,
+      "Toggle(isOn: $devInfo) {"
+    ],
+    [
+      "CONCAT",
+      803,
+      "+ \"library reports, device checks and run logs.\")"
+    ],
+    [
+      "CONCAT",
+      817,
+      "+ \"The console shows Husk's live log, the guest's serial output and QEMU's own \""
+    ]
+  ],
+  "Husk/TLAppSettings.swift": [
+    [
+      "NONLIT",
+      184,
+      "ForEach(TLAppSettings.Orientation.allCases) { Text($0.title).tag($0) }"
+    ],
+    [
+      "NONLIT",
+      187,
+      "ForEach(TLAppSettings.Resolution.allCases) { Text($0.title).tag($0) }"
+    ],
+    [
+      "CONCAT",
+      195,
+      "+ \"running in this session needs Husk closed and opened again.\")"
+    ],
+    [
+      "NONLIT",
+      201,
+      "Text(m == .auto ? \"Default (\\(AppWindows.defaultWindowed ? \"Window\" : \"Full Screen\"))\" : m.title).tag(m)"
+    ],
+    [
+      "CONCAT",
+      208,
+      "+ \"the dock at the edge of the screen while you use the rest of Husk.\")"
+    ],
+    [
+      "CONCAT",
+      217,
+      "+ \"the bar back, and again to hide it. The Hide button in the bar does the same while playing.\")"
+    ],
+    [
+      "CONCAT",
+      228,
+      "+ \"game, and mods are found and installed in the game itself, from Geode's button on the main menu. \""
+    ],
+    [
+      "NONLIT",
+      235,
+      "ForEach(TLAppSettings.PadMode.allCases) { Text($0.title).tag($0) }"
+    ],
+    [
+      "CONCAT",
+      248,
+      "+ \"controller is connected. Always offers it for any game that understands one. A paired controller is always used.\")"
+    ],
+    [
+      "CONCAT",
+      259,
+      "+ \"downloads a profile: open Settings, tap Profile Downloaded, then Install.\")"
+    ],
+    [
+      "NONLIT",
+      264,
+      "Button(role: .destructive) { confirmReset = true } label: {"
+    ],
+    [
+      "NONLIT",
+      271,
+      "Text(inUse ? \"The game is loaded in this session. Close Husk completely and open it again to reset its data.\""
+    ],
+    [
+      "NONLIT",
+      303,
+      "HStack(spacing: 10) { ProgressView(); Text(what).foregroundStyle(.secondary) }"
+    ],
+    [
+      "NONLIT",
+      308,
+      "Text(why).font(.footnote).foregroundStyle(.orange)"
+    ]
+  ],
+  "Husk/TLUnityView.swift": [
+    [
+      "NONLIT",
+      822,
+      "Text(PadLayout.name(id)).font(.system(size: 14, weight: .semibold)).foregroundStyle(.white)"
+    ],
+    [
+      "NONLIT",
+      832,
+      "Button(padLayout[id].hidden ? \"Show\" : \"Hide\") { padLayout[id].hidden.toggle(); padLayout.save(app.id) }"
+    ],
+    [
+      "NONLIT",
+      865,
+      "Text(model.state == Int32(HUSK_UNITY_RUNNING) ? app.label : model.statusText)"
+    ],
+    [
+      "NONLIT",
+      869,
+      "Label(pads.names.count == 1 ? pads.names[0] : \"\\(pads.names.count) controllers\", systemImage: \"gamecontroller.fill\")"
+    ],
+    [
+      "NONLIT",
+      874,
+      "Label(settings.padShown ? \"Hide pad\" : \"Pad\", systemImage: \"gamecontroller\").font(.system(size: 12, weight: .semibold))"
+    ],
+    [
+      "NONLIT",
+      879,
+      "Label(editingPad ? \"Done\" : \"Edit pad\", systemImage: \"slider.horizontal.below.square.and.square.filled\")"
+    ],
+    [
+      "NONLIT",
+      886,
+      "Text(stats).font(.technical(11)).foregroundStyle(.white.opacity(0.7)).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      890,
+      "Text(showLog ? \"Hide log\" : \"Log\").font(.system(size: 12, weight: .semibold))"
+    ],
+    [
+      "NONLIT",
+      916,
+      "Text(model.logText.isEmpty ? \"Starting…\" : model.logText)"
+    ]
+  ],
+  "Husk/TechnicalDetails.swift": [
+    [
+      "NONLIT",
+      61,
+      "Text(summary).font(.footnote).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      81,
+      "Text(lib.name).font(.system(.subheadline, design: .monospaced)).lineLimit(1).truncationMode(.middle)"
+    ],
+    [
+      "NONLIT",
+      83,
+      "Text(bytes(lib.bytes)).font(.caption).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      85,
+      "Text(libraryDetail(lib)).font(.caption).foregroundStyle(lib.status == \"ok\" ? Color.secondary : Color.orange)"
+    ],
+    [
+      "NONLIT",
+      99,
+      "Text(log)"
+    ],
+    [
+      "NONLIT",
+      108,
+      "Text(log == nil ? \"Reading…\" : \"No log yet. It is written the first time the game runs.\")"
+    ],
+    [
+      "NONLIT",
+      142,
+      "Text(value)"
+    ],
+    [
+      "NONLIT",
+      147,
+      "Text(label).lineLimit(2)"
+    ]
+  ],
+  "Husk/Theme.swift": [
+    [
+      "NONLIT",
+      157,
+      "Button(action: action) {"
+    ],
+    [
+      "NONLIT",
+      194,
+      "Button(action: action) {"
+    ],
+    [
+      "NONLIT",
+      195,
+      "Text(title)"
+    ],
+    [
+      "NONLIT",
+      211,
+      "Text(text)"
+    ],
+    [
+      "NONLIT",
+      227,
+      "Text(label).foregroundStyle(Theme.textDim)"
+    ],
+    [
+      "NONLIT",
+      229,
+      "Text(value)"
+    ],
+    [
+      "NONLIT",
+      257,
+      "Text(title)"
+    ],
+    [
+      "NONLIT",
+      261,
+      "Text(subtitle)"
+    ],
+    [
+      "NONLIT",
+      305,
+      "Text(title)"
+    ],
+    [
+      "NONLIT",
+      310,
+      "Text(trailing).font(.system(size: 13)).foregroundStyle(Theme.textDim)"
+    ],
+    [
+      "NONLIT",
+      323,
+      "Label(text, systemImage: systemImage)"
+    ],
+    [
+      "NONLIT",
+      346,
+      "Text(title)"
+    ],
+    [
+      "NONLIT",
+      349,
+      "Text(message)"
+    ],
+    [
+      "NONLIT",
+      355,
+      "Button(actionTitle, action: action)"
+    ],
+    [
+      "NONLIT",
+      389,
+      "Text(toast.title)"
+    ],
+    [
+      "NONLIT",
+      393,
+      "Text(detail)"
+    ],
+    [
+      "NONLIT",
+      400,
+      "Button(action: onClose) {"
+    ],
+    [
+      "NONLIT",
+      424,
+      "Button(action: action) {"
+    ],
+    [
+      "NONLIT",
+      427,
+      "ProgressView().scaleEffect(0.6).tint(.white)"
+    ]
+  ],
+  "Husk/TranslationLayer.swift": [
+    [
+      "NONLIT",
+      537,
+      "Text(check.title).foregroundStyle(Theme.text)"
+    ],
+    [
+      "NONLIT",
+      541,
+      "Text(check.detail)"
+    ],
+    [
+      "NONLIT",
+      551,
+      "Label(store.checking ? \"Checking…\""
+    ],
+    [
+      "CONCAT",
+      560,
+      "+ \"that only the phone can answer -- above all, whether a library's code \""
+    ],
+    [
+      "NONLIT",
+      791,
+      "ProgressView().tint(.white)"
+    ],
+    [
+      "NONLIT",
+      842,
+      "Text(runner.isRunning ? app.label : runner.statusText)"
+    ],
+    [
+      "NONLIT",
+      847,
+      "Text(showLog ? \"Hide log\" : \"Log\").font(.system(size: 12, weight: .semibold))"
+    ],
+    [
+      "NONLIT",
+      864,
+      "Text(runner.logText.isEmpty ? \"Starting…\" : runner.logText)"
+    ]
+  ],
+  "Husk/WebAppViews.swift": [
+    [
+      "NONLIT",
+      74,
+      "Text(app.label).font(.system(size: 12, weight: .medium)).foregroundStyle(.secondary).lineLimit(1)"
+    ]
+  ],
+  "Husk/WhatsNew.swift": [
+    [
+      "NONLIT",
+      72,
+      "Text(item.title).font(.headline)"
+    ],
+    [
+      "NONLIT",
+      73,
+      "Text(item.detail).font(.subheadline).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      82,
+      "Button(action: done) {"
+    ]
+  ],
+  "Husk/Play/GoogleSignInSheet.swift": [
+    [
+      "NONLIT",
+      36,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      38,
+      "Text(manager.statusMessage ?? \"Signing in to Google…\")"
+    ]
+  ],
+  "Husk/Play/StoreView.swift": [
+    [
+      "NONLIT",
+      35,
+      "Text(s.isAnonymous ? \"Guest Account (Aurora)\" : s.email)"
+    ],
+    [
+      "NONLIT",
+      38,
+      "Text(s.email).font(.caption2).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      42,
+      "Button(role: .destructive) {"
+    ],
+    [
+      "NONLIT",
+      91,
+      "Text(manager.errorMessage ?? \"\")"
+    ],
+    [
+      "NONLIT",
+      120,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      121,
+      "Text(manager.statusMessage ?? \"Signing in…\")"
+    ],
+    [
+      "NONLIT",
+      246,
+      "Text(app.title)"
+    ],
+    [
+      "NONLIT",
+      251,
+      "Text(app.developer.isEmpty ? app.id : app.developer)"
+    ],
+    [
+      "NONLIT",
+      261,
+      "Text(String(format: \"%.1f\", app.rating))"
+    ],
+    [
+      "NONLIT",
+      292,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      300,
+      "Text(app.isFree ? \"GET\" : app.formattedPrice)"
+    ],
+    [
+      "NONLIT",
+      336,
+      "Text(app.title)"
+    ],
+    [
+      "NONLIT",
+      341,
+      "Text(app.developer)"
+    ],
+    [
+      "NONLIT",
+      402,
+      "Text(app.summary)"
+    ],
+    [
+      "NONLIT",
+      411,
+      ".navigationTitle(app.title)"
+    ],
+    [
+      "NONLIT",
+      428,
+      "ProgressView()"
+    ],
+    [
+      "NONLIT",
+      438,
+      "Text(app.isFree ? \"GET\" : app.formattedPrice)"
+    ],
+    [
+      "NONLIT",
+      451,
+      "Text(value)"
+    ],
+    [
+      "NONLIT",
+      454,
+      "Text(title)"
+    ]
+  ],
+  "HuskDownloadsWidget/DownloadsWidget.swift": [
+    [
+      "NONLIT",
+      28,
+      "Text(statePercent(context.state)).font(.headline.monospacedDigit())"
+    ],
+    [
+      "NONLIT",
+      32,
+      "Text(context.state.title).font(.subheadline.weight(.semibold)).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      35,
+      "Text(stateDetail(context.state)).font(.caption).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      44,
+      "Text(statePercent(context.state)).font(.caption.monospacedDigit())"
+    ],
+    [
+      "NONLIT",
+      59,
+      "Text(state.title).font(.headline).lineLimit(1)"
+    ],
+    [
+      "NONLIT",
+      61,
+      "Text(statePercent(state)).font(.headline.monospacedDigit())"
+    ],
+    [
+      "NONLIT",
+      65,
+      "Text(stateDetail(state)).font(.caption).foregroundStyle(.secondary)"
+    ],
+    [
+      "NONLIT",
+      80,
+      "ProgressView(timerInterval: Date()...end, countsDown: false) { EmptyView() } currentValueLabel: { EmptyView() }"
+    ],
+    [
+      "NONLIT",
+      83,
+      "ProgressView(value: state.total > 0 ? min(1, Double(state.received) / Double(state.total)) : (state.finished ? 1 : 0))"
+    ],
+    [
+      "NONLIT",
+      95,
+      "Text(timerInterval: Date()...end, countsDown: true).font(.caption.monospacedDigit()).foregroundStyle(.secondary)"
+    ]
+  ]
+}

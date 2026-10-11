@@ -1,0 +1,18 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "NSLocalNetworkUsageDescription" : {
+      "comment" : "Shown in the iOS local-network permission prompt.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Husk 使用本地网络与此 iPhone 配对以启用 JIT，无需电脑。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

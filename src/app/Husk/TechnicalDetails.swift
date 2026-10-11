@@ -12,7 +12,7 @@ extension TLReport {
     /// What runs it, in words.
     var runnerName: String {
         if runsOnNativeRuntime { return nativeEngineName }
-        if let web = webKind { return "\(web.name) (web app)" }
+        if let web = webKind { return String(localized: "\(web.name) (web app)") }
         return canRun ? "Java (Husk's interpreter)" : "None"
     }
 }
@@ -58,7 +58,7 @@ struct TLTechnicalView: View {
                 row("Package", app.packageName ?? "—", mono: true)
                 row("Architectures", report.map { $0.abis.isEmpty ? "None (Java only)" : $0.abis.joined(separator: ", ") } ?? "—")
                 if let summary = report?.displaySummary {
-                    Text(summary).font(.footnote).foregroundStyle(.secondary)
+                    Text(LocalizedStringKey(summary)).font(.footnote).foregroundStyle(.secondary)
                 }
             }
 
@@ -67,7 +67,7 @@ struct TLTechnicalView: View {
                     row((apk as NSString).lastPathComponent, size(of: apk), mono: true)
                 }
                 if let r = report {
-                    row("Java Code", r.dexCount == 0 ? "None" : "\(r.dexCount) DEX file\(r.dexCount == 1 ? "" : "s"), \(bytes(r.dexBytes))")
+                    row("Java Code", r.dexCount == 0 ? "None" : String(localized: "\(r.dexCount) DEX file(s), \(bytes(r.dexBytes))"))
                     row("Android Libraries Used", "\(r.systemLibraries.count)")
                 }
                 row("Saved Data", dataSize)
@@ -82,7 +82,7 @@ struct TLTechnicalView: View {
                                 Spacer(minLength: 8)
                                 Text(bytes(lib.bytes)).font(.caption).foregroundStyle(.secondary)
                             }
-                            Text(libraryDetail(lib)).font(.caption).foregroundStyle(lib.status == "ok" ? Color.secondary : Color.orange)
+                            Text(LocalizedStringKey(libraryDetail(lib))).font(.caption).foregroundStyle(lib.status == "ok" ? Color.secondary : Color.orange)
                         }
                         .padding(.vertical, 2)
                     }
@@ -105,7 +105,7 @@ struct TLTechnicalView: View {
                     .frame(maxHeight: 320)
                     Button { sharing = true } label: { Label("Share Log", systemImage: "square.and.arrow.up") }
                 } else {
-                    Text(log == nil ? "Reading…" : "No log yet. It is written the first time the game runs.")
+                    Text(LocalizedStringKey(log == nil ? "Reading…" : "No log yet. It is written the first time the game runs."))
                         .font(.footnote).foregroundStyle(.secondary)
                 }
             } header: {
@@ -139,21 +139,21 @@ struct TLTechnicalView: View {
 
     private func row(_ label: String, _ value: String, mono: Bool = false) -> some View {
         LabeledContent {
-            Text(value)
+            Text(LocalizedStringKey(value))
                 .font(mono ? .system(.footnote, design: .monospaced) : .body)
                 .multilineTextAlignment(.trailing)
                 .textSelection(.enabled)
         } label: {
-            Text(label).lineLimit(2)
+            Text(LocalizedStringKey(label)).lineLimit(2)
         }
     }
 
     private func libraryDetail(_ lib: TLLibrary) -> String {
         var parts: [String] = []
-        if let r = lib.relocations { parts.append("\(r) relocations") }
-        if let t = lib.tpidrReads, t > 0 { parts.append("\(t) thread-register reads") }
-        if let s = lib.svc, s > 0 { parts.append("\(s) system calls") }
-        if let c = lib.conflictPages, c > 0 { parts.append("\(c) shared code/data pages") }
+        if let r = lib.relocations { parts.append(String(localized: "\(r) relocations")) }
+        if let t = lib.tpidrReads, t > 0 { parts.append(String(localized: "\(t) thread-register reads")) }
+        if let s = lib.svc, s > 0 { parts.append(String(localized: "\(s) system calls")) }
+        if let c = lib.conflictPages, c > 0 { parts.append(String(localized: "\(c) shared code/data pages")) }
         if lib.tls == true { parts.append("thread-local storage") }
         if !lib.notes.isEmpty { parts.append(contentsOf: lib.notes) }
         return parts.isEmpty ? (lib.status == "ok" ? "Loads as it is" : lib.status) : parts.joined(separator: " · ")

@@ -1,0 +1,19 @@
+[
+  "Files",
+  "Done",
+  "Cannot Read This Folder",
+  "Empty",
+  "Nothing is in this folder yet.",
+  "Import Files",
+  "Refresh",
+  "Import",
+  "Install \\(installing?.name ?? \"\")?",
+  "Install",
+  "Cancel",
+  "Android installs it from where it already is — nothing is copied.",
+  "Storage",
+  "\\(AppDetailView.bytes(s.total - s.free)) of \\(AppDetailView.bytes(s.total))",
+  "\\(size) · \\(Self.when(m))",
+  "They go to \\((destination as NSString).lastPathComponent). Unmodified APKs install from here too.",
+  "Browse Files"
+]

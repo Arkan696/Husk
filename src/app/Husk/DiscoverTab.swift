@@ -76,7 +76,7 @@ struct DiscoverView: View {
                         Label {
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(url).font(.footnote).lineLimit(1)
-                                Text(manager.fetchErrors[url] ?? "").font(.caption).foregroundStyle(.secondary)
+                                Text(LocalizedStringKey(manager.fetchErrors[url] ?? "")).font(.caption).foregroundStyle(.secondary)
                             }
                         } icon: { Image(systemName: "exclamationmark.triangle.fill").foregroundStyle(.orange) }
                     }
@@ -130,7 +130,7 @@ struct DiscoverView: View {
 
             VStack(alignment: .leading, spacing: 3) {
                 Text(app.name).font(.body.weight(.medium)).lineLimit(1)
-                Text(app.localizedDescription)
+                Text(LocalizedStringKey(app.localizedDescription))
                     .font(.caption).foregroundStyle(.secondary).lineLimit(2)
             }
 

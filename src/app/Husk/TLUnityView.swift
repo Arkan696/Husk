@@ -196,7 +196,7 @@ final class TLUnityUIView: UIView, UIKeyInput {
         husk_unity_perf_snapshot(&p)
         let text = p.fps > 0
             ? String(format: "%.0f fps · %.1f ms · max %.0f", p.fps, p.mean_ms, p.max_ms)
-            : "starting"
+            : String(localized: "starting")
         stats.text = text
         onStats?(text)
     }
@@ -359,7 +359,7 @@ final class TLUnityUIView: UIView, UIKeyInput {
         typedLabel.autoresizingMask = [.flexibleWidth]
         bar.addSubview(typedLabel)
         let done = UIButton(type: .system)
-        done.setTitle("Done", for: .normal)
+        done.setTitle(String(localized: "Done"), for: .normal)
         done.titleLabel?.font = .systemFont(ofSize: 17, weight: .semibold)
         done.frame = CGRect(x: 100, y: 0, width: 80, height: 44)
         done.autoresizingMask = [.flexibleLeftMargin]
@@ -672,7 +672,7 @@ struct TLCocosAttemptView: View {
     @State private var stoppedWhy: AppDiagnosis?
     @AppStorage("husk.tl.unity.showLog") private var showLogSetting = false
     @AppStorage(TranslationLayer.devInfoKey) private var devInfo = false
-    @State private var stats = "starting"
+    @State private var stats = String(localized: "starting")
     @ObservedObject private var pads = HuskGamepads.shared
     @StateObject private var virtualPad = VirtualPad()
     /// Where the player has put the pad's controls in this game, and whether they are moving them now.
@@ -819,7 +819,7 @@ struct TLCocosAttemptView: View {
     private var padEditor: some View {
         VStack(spacing: 10) {
             if let id = padSelected {
-                Text(PadLayout.name(id)).font(.system(size: 14, weight: .semibold)).foregroundStyle(.white)
+                Text(LocalizedStringKey(PadLayout.name(id))).font(.system(size: 14, weight: .semibold)).foregroundStyle(.white)
                 HStack(spacing: 10) {
                     Image(systemName: "minus.magnifyingglass").foregroundStyle(.white.opacity(0.7))
                     Slider(value: Binding(get: { Double(padLayout[id].scale) },
@@ -829,7 +829,7 @@ struct TLCocosAttemptView: View {
                     Image(systemName: "plus.magnifyingglass").foregroundStyle(.white.opacity(0.7))
                 }
                 HStack(spacing: 10) {
-                    Button(padLayout[id].hidden ? "Show" : "Hide") { padLayout[id].hidden.toggle(); padLayout.save(app.id) }
+                    Button(LocalizedStringKey(padLayout[id].hidden ? "Show" : "Hide")) { padLayout[id].hidden.toggle(); padLayout.save(app.id) }
                     Button("Reset") { padLayout[id] = PadLayout.Adjust(); padLayout.save(app.id) }
                 }
                 .buttonStyle(.bordered).tint(.white)
@@ -862,21 +862,21 @@ struct TLCocosAttemptView: View {
                 .tint(.white)
             }
             Circle().fill(model.statusColor).frame(width: 7, height: 7)
-            Text(model.state == Int32(HUSK_UNITY_RUNNING) ? app.label : model.statusText)
+            Text(LocalizedStringKey(model.state == Int32(HUSK_UNITY_RUNNING) ? app.label : model.statusText))
                 .font(.system(size: 12, weight: .medium)).foregroundStyle(.white.opacity(0.85)).lineLimit(1)
             Spacer()
             if !pads.names.isEmpty {
-                Label(pads.names.count == 1 ? pads.names[0] : "\(pads.names.count) controllers", systemImage: "gamecontroller.fill")
+                Label(LocalizedStringKey(pads.names.count == 1 ? pads.names[0] : String(localized: "\(pads.names.count) controllers")), systemImage: "gamecontroller.fill")
                     .font(.system(size: 11, weight: .medium)).foregroundStyle(.white.opacity(0.7)).lineLimit(1)
             }
             if padOffered {
                 Button { settings.padShown.toggle(); settings.save(app.id); if !settings.padShown { editingPad = false } } label: {
-                    Label(settings.padShown ? "Hide pad" : "Pad", systemImage: "gamecontroller").font(.system(size: 12, weight: .semibold))
+                    Label(LocalizedStringKey(settings.padShown ? "Hide pad" : "Pad"), systemImage: "gamecontroller").font(.system(size: 12, weight: .semibold))
                 }
                 .tint(.white)
                 if settings.padShown {
                     Button { padSelected = nil; editingPad.toggle() } label: {
-                        Label(editingPad ? "Done" : "Edit pad", systemImage: "slider.horizontal.below.square.and.square.filled")
+                        Label(LocalizedStringKey(editingPad ? "Done" : "Edit pad"), systemImage: "slider.horizontal.below.square.and.square.filled")
                             .font(.system(size: 12, weight: .semibold))
                     }
                     .tint(editingPad ? .yellow : .white)
@@ -887,7 +887,7 @@ struct TLCocosAttemptView: View {
             }
             if devInfo {
                 Button { withAnimation(.snappy(duration: 0.25)) { showLog.toggle() } } label: {
-                    Text(showLog ? "Hide log" : "Log").font(.system(size: 12, weight: .semibold))
+                    Text(LocalizedStringKey(showLog ? "Hide log" : "Log")).font(.system(size: 12, weight: .semibold))
                 }
                 .tint(.white)
             }
@@ -913,7 +913,7 @@ struct TLCocosAttemptView: View {
             .padding(.horizontal, 10).padding(.vertical, 6)
             ScrollViewReader { proxy in
                 ScrollView {
-                    Text(model.logText.isEmpty ? "Starting…" : model.logText)
+                    Text(LocalizedStringKey(model.logText.isEmpty ? "Starting…" : model.logText))
                         .font(.technical(10))
                         .foregroundStyle(Theme.text)
                         .frame(maxWidth: .infinity, alignment: .leading)

@@ -71,7 +71,7 @@ struct DirectoryView: View {
                            action: { showImportSheet = true })
             }
         }
-        .navigationTitle(title)
+        .navigationTitle(LocalizedStringKey(title))
         .navigationBarTitleDisplayMode(path == FilesTab.root ? .large : .inline)
         .toolbar {
             ToolbarItemGroup(placement: .topBarTrailing) {
@@ -131,9 +131,9 @@ struct DirectoryView: View {
                 .foregroundStyle(tint)
                 .frame(width: 28)
             VStack(alignment: .leading, spacing: 2) {
-                Text(title).lineLimit(1).truncationMode(.middle)
+                Text(LocalizedStringKey(title)).lineLimit(1).truncationMode(.middle)
                 if let subtitle {
-                    Text(subtitle).font(.caption).foregroundStyle(.secondary).lineLimit(1)
+                    Text(LocalizedStringKey(subtitle)).font(.caption).foregroundStyle(.secondary).lineLimit(1)
                 }
             }
         }
@@ -161,7 +161,7 @@ struct DirectoryView: View {
     private func subtitle(_ e: AndroidHost.GuestEntry) -> String {
         let size = AppDetailView.bytes(e.size)
         guard let m = e.modified else { return size }
-        return "\(size) · \(Self.when(m))"
+        return String(localized: "\(size) · \(Self.when(m))")
     }
 
     private func icon(for name: String) -> String {
@@ -221,8 +221,7 @@ struct ImportSheet: View {
                         .font(.system(size: 34, weight: .light))
                         .foregroundStyle(Color.accentColor)
                     Text("Import Files").font(.headline)
-                    Text("They go to \((destination as NSString).lastPathComponent). "
-                       + "Unmodified APKs install from here too.")
+                    Text(String(localized: "They go to \((destination as NSString).lastPathComponent). Unmodified APKs install from here too."))
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)

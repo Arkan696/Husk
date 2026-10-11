@@ -1,0 +1,18 @@
+[
+  "Bad APK",
+  "Not supported: wrong kind of CPU code",
+  "Incomplete app",
+  "This app is published in several pieces (split APKs) and only its base was imported, so its libraries or resources are missing. Import the whole bundle (.apks, .xapk or .apkm), or get it from Husk's store.",
+  "Protected app",
+  "Crashed in \\(lib)",
+  "The app crashed",
+  "It stopped with \\(signal). The report has the full log of the run.",
+  "The app refused to run here",
+  "Uses something Husk does not have yet",
+  "The app needs a part of Android that Husk's runtime does not provide yet: \\(apiName(firstPart)).",
+  "The app called \\(fn), a system function Husk does not provide yet.",
+  "Needs Google Play services",
+  "This app relies on Google Play services (Google sign-in, Google's account and device checks) for more than Husk can answer for. Apps that only use Google's libraries run; this one stops without the real services.",
+  "Share Report",
+  "Close"
+]

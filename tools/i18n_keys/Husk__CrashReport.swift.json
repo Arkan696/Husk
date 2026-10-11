@@ -1,0 +1,18 @@
+[
+  "The game crashed",
+  "The game could not start",
+  "Husk closed while the game was running",
+  "It stopped with \\(name). The report has the full log of that run.",
+  "SIGSEGV, a bad memory access",
+  "SIGABRT, the game or a library gave up",
+  "SIGILL, an instruction this device does not run",
+  "SIGFPE, an arithmetic error",
+  "SIGSYS, a system call iOS does not allow",
+  "The runtime could not start it. The report says which part was missing.",
+  "Nothing was recorded, which usually means iOS ended Husk for using too much memory, or Husk was closed from the app switcher.",
+  "Last lines",
+  "Share Report",
+  "The report holds the full log of that run and which device and build it was on. Nothing is sent anywhere unless you share it.",
+  "Crash Report",
+  "Done"
+]

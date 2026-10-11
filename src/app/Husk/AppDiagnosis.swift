@@ -58,8 +58,7 @@ struct AppDiagnosis: Identifiable, Equatable {
         }
         if app.apks.count == 1, let base = app.apks.first, husk_apk_split_required(base) != 0 {
             return AppDiagnosis(kind: .missingSplits, title: "Incomplete app",
-                                detail: "This app is published in several pieces (split APKs) and only its base was imported, so its libraries or "
-                                    + "resources are missing. Import the whole bundle (.apks, .xapk or .apkm), or get it from Husk's store.",
+                                detail: "This app is published in several pieces (split APKs) and only its base was imported, so its libraries or resources are missing. Import the whole bundle (.apks, .xapk or .apkm), or get it from Husk's store.",
                                 evidence: "manifest: split APKs required")
         }
         if let lib = r.libraries.first(where: { l in protectorLibraries.contains(where: { l.name.hasPrefix($0) }) }) {
@@ -144,8 +143,7 @@ struct AppDiagnosis: Identifiable, Equatable {
 
     private static func googleDiagnosis(_ line: String) -> AppDiagnosis {
         AppDiagnosis(kind: .needsGoogle, title: "Needs Google Play services",
-                     detail: "This app relies on Google Play services (Google sign-in, Google's account and device checks) for more than Husk "
-                        + "can answer for. Apps that only use Google's libraries run; this one stops without the real services.",
+                     detail: "This app relies on Google Play services (Google sign-in, Google's account and device checks) for more than Husk can answer for. Apps that only use Google's libraries run; this one stops without the real services.",
                      evidence: line)
     }
 
@@ -171,8 +169,8 @@ struct AppDiagnosisCard: View {
                 .foregroundStyle(diagnosis.blocksLaunch ? .red : .orange)
                 .frame(width: 26)
             VStack(alignment: .leading, spacing: 4) {
-                Text(diagnosis.title).font(.subheadline.weight(.semibold))
-                Text(diagnosis.detail).font(.footnote).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+                Text(LocalizedStringKey(diagnosis.title)).font(.subheadline.weight(.semibold))
+                Text(LocalizedStringKey(diagnosis.detail)).font(.footnote).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
                 if showsEvidence, let e = diagnosis.evidence {
                     Text(e).font(.system(size: 10.5, design: .monospaced)).foregroundStyle(.secondary)
                         .lineLimit(4).textSelection(.enabled).padding(.top, 2)

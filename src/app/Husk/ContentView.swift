@@ -157,7 +157,7 @@ struct ContentView: View {
             Button("Not Now", role: .cancel) { showcase.asked() }
         } message: {
             let n = showcase.updates.count
-            Text("Metadata for \(n) of your app\(n == 1 ? "" : "s") has been updated. Would you like to download the updates?")
+            Text("Metadata for \(n) of your apps has been updated. Would you like to download the updates?")
         }
         // An APK shared to Husk: where does it go?
         .sheet(isPresented: Binding(get: { !incoming.waiting.isEmpty },
@@ -182,13 +182,13 @@ struct ContentView: View {
         .onChange(of: jit.attachGeneration) { _ in evaluate() }
         // Asking rather than downloading. Two gigabytes over someone's cellular
         // connection is not a decision to make on their behalf.
-        .alert(guest.update.title, isPresented: Binding(
+        .alert(LocalizedStringKey(guest.update.title), isPresented: Binding(
                 get: { guest.update.isSomething },
                 set: { if !$0 { guest.dismissUpdate() } })) {
             Button("Download") { guest.applyUpdate() }
             Button("Not now", role: .cancel) { guest.dismissUpdate() }
         } message: {
-            Text(guest.update.detail)
+            Text(LocalizedStringKey(guest.update.detail))
         }
         .onAppear {
             crash.checkPreviousRun()
@@ -366,7 +366,7 @@ struct GuestScreenView: View {
                     ProgressView(value: Double(runner.bootProgress), total: 100)
                         .progressViewStyle(.linear)
                         .frame(width: 200)
-                    Text(runner.setupMessage ?? "Starting Android…")
+                    Text(LocalizedStringKey(runner.setupMessage ?? "Starting Android…"))
                         .font(.caption2).foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                 }
@@ -434,14 +434,14 @@ struct GuestScreenView: View {
                                 HuskGLView.rotated.toggle()
                                 rotated = HuskGLView.rotated
                             } label: {
-                                Label(rotated ? "Unrotate picture" : "Rotate picture",
+                                Label(LocalizedStringKey(rotated ? "Unrotate picture" : "Rotate picture"),
                                       systemImage: "rotate.right")
                             }
                             Divider()
                             Button {
                                 QemuRunner.shared.saveState(reason: "asked from full screen")
                             } label: {
-                                Label(runner.isSavingState ? "Saving…" : "Save Android",
+                                Label(LocalizedStringKey(runner.isSavingState ? "Saving…" : "Save Android"),
                                       systemImage: "externaldrive.badge.checkmark")
                             }
                             .disabled(runner.isSavingState)
@@ -605,8 +605,7 @@ struct ControlsSheet: View {
                     row("computermouse", "Mouse", on: false, available: false)
                 }
 
-                Text("Touch always works. A gamepad and a pointer are not wired "
-                   + "through to Android yet.")
+                Text("Touch always works. A gamepad and a pointer are not wired through to Android yet.")
                     .font(.system(size: 12))
                     .foregroundStyle(Theme.textDim)
                     .multilineTextAlignment(.center)
@@ -627,7 +626,7 @@ struct ControlsSheet: View {
                 .frame(width: 34, height: 34)
                 .background(Theme.surfaceHigh,
                             in: RoundedRectangle(cornerRadius: 10, style: .continuous))
-            Text(title)
+            Text(LocalizedStringKey(title))
                 .font(.system(size: 15, weight: .medium))
                 .foregroundStyle(available ? Theme.text : Theme.textDim.opacity(0.6))
             Spacer()

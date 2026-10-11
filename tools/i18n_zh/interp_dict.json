@@ -1,0 +1,406 @@
+{
+  " {} of them use tricks the older loader could not handle; the native runtime handles those too, except for optional anti-tamper code, which it leaves out.": {
+    "a": "d",
+    "zh": " 其中有 %1$lld 个使用了旧加载器无法处理的技巧；原生运行时也能处理这些，但会跳过可选的防篡改代码。"
+  },
+  " · {}/s": {
+    "a": "@",
+    "zh": " · %1$@/秒"
+  },
+  " · {}/{} files": {
+    "a": "dd",
+    "zh": " · %1$lld/%2$lld 个文件"
+  },
+  " · {} left": {
+    "a": "@",
+    "zh": " · 剩余 %1$@"
+  },
+  "A Flutter app. Its engine and its compiled Dart run natively through Husk's translation layer, which loads its {} arm64 libraries itself.": {
+    "a": "d",
+    "zh": "这是一款 Flutter 应用。它的引擎和编译后的 Dart 通过 Husk 的翻译层原生运行，翻译层会自行加载它的 %1$lld 个 arm64 库。"
+  },
+  "A {} game. It runs through Husk's native runtime, which loads its {} arm64 libraries itself.": {
+    "a": "@d",
+    "zh": "这是一款 %1$@ 游戏。它通过 Husk 的原生运行时运行，运行时会自行加载它的 %2$lld 个 arm64 库。"
+  },
+  "A backup is a .zip of everything {} has saved in Husk, to keep in Files or move to another device.": {
+    "a": "@",
+    "zh": "备份是一个 .zip，包含 %1$@ 在 Husk 中保存的全部内容，可保存在“文件”中或转移到其他设备。"
+  },
+  "A pairing file made on a computer lets Husk talk to this {} the same way.": {
+    "a": "@",
+    "zh": "在电脑上生成的配对文件，可让 Husk 以同样的方式与你的 %1$@ 通信。"
+  },
+  "Adding {} APKs…": {
+    "a": "d",
+    "zh": "正在添加 %1$lld 个 APK…"
+  },
+  "Adding {}…": {
+    "a": "@",
+    "zh": "正在添加 %1$@…"
+  },
+  "An Android app. Husk runs its code on its own Java runtime and loads its {} arm64 libraries itself.": {
+    "a": "d",
+    "zh": "这是一款安卓应用。Husk 用自带的 Java 运行时运行它的代码，并自行加载它的 %1$lld 个 arm64 库。"
+  },
+  "Android needs memory it can write and then run, which on iOS only an attached debugger can grant. Choose how your {} gets one.": {
+    "a": "@",
+    "zh": "请选择你的 %1$@ 获取调试器的方式。安卓需要可写入并运行的内存，在 iOS 上只有已连接的调试器才能授予。"
+  },
+  "Crashed in {}": {
+    "a": "@",
+    "zh": "在 %1$@ 中崩溃"
+  },
+  "Default ({})": {
+    "a": "@",
+    "zh": "默认（%1$@）"
+  },
+  "Deleted the {} machine. The next launch boots from cold.": {
+    "a": "@",
+    "zh": "已删除 %1$@ 机型，下次启动将冷启动。"
+  },
+  "Downloading · {} of {}": {
+    "a": "@@",
+    "zh": "下载中 · %1$@ / 共 %2$@"
+  },
+  "Enable JIT with {}": {
+    "a": "@",
+    "zh": "用 %1$@ 启用 JIT"
+  },
+  "Enter this code on your {}": {
+    "a": "@",
+    "zh": "在你的 %1$@ 上输入此验证码"
+  },
+  "Exit code {} · {} frame(s) drawn": {
+    "a": "dd",
+    "zh": "退出码 %1$lld · 已绘制 %2$lld 帧"
+  },
+  "Games need it. {} turns it on.": {
+    "a": "@",
+    "zh": "游戏需要 JIT，由 %1$@ 开启。"
+  },
+  "Husk {}": {
+    "a": "@",
+    "zh": "Husk %1$@"
+  },
+  "Husk {} is out": {
+    "a": "@",
+    "zh": "Husk %1$@ 已发布"
+  },
+  "Husk {} Is Available": {
+    "a": "@",
+    "zh": "Husk %1$@ 已可用"
+  },
+  "Husk could not copy it: {}": {
+    "a": "@",
+    "zh": "Husk 无法复制它：%1$@"
+  },
+  "Husk pretends to be a computer on your Wi-Fi, and your {} pairs with it the way it would with a Mac.": {
+    "a": "@",
+    "zh": "Husk 会在你的 Wi‑Fi 上模拟一台电脑，你的 %1$@ 会像与 Mac 配对一样与它配对。"
+  },
+  "Husk's helper reaches this {}'s debugging service through a local VPN. Nothing leaves your {}.": {
+    "a": "@@",
+    "zh": "Husk 的助手通过本地 VPN 访问此 %1$@ 的调试服务，任何内容都不会离开你的 %2$@。"
+  },
+  "Import this {}'s pairing file into StikDebug.": {
+    "a": "@",
+    "zh": "将此 %1$@ 的配对文件导入 StikDebug。"
+  },
+  "In a window, {} runs over Husk: move it by its title bar, resize it from the corner, and minimise it to the dock at the edge of the screen while you use the rest of Husk.": {
+    "a": "@",
+    "zh": "在窗口中，%1$@ 运行在 Husk 之上：可拖动标题栏移动、从角落缩放，并可在使用 Husk 其他功能时最小化到屏幕边缘的停靠栏。"
+  },
+  "Install [LocalDevVPN]({}) from the App Store.": {
+    "a": "@",
+    "zh": "从 App Store 安装 [LocalDevVPN](%1$@)。"
+  },
+  "Install {}?": {
+    "a": "@",
+    "zh": "安装 %1$@？"
+  },
+  "Install and connect [LocalDevVPN]({}).": {
+    "a": "@",
+    "zh": "安装并连接 [LocalDevVPN](%1$@)。"
+  },
+  "It stopped with {}. The report has the full log of that run.": {
+    "a": "@",
+    "zh": "它因 %1$@ 停止，报告中有该次运行的完整日志。"
+  },
+  "It stopped with {}. The report has the full log of the run.": {
+    "a": "@",
+    "zh": "它因 %1$@ 停止，报告中有该次运行的完整日志。"
+  },
+  "Metadata for {} of your apps has been updated. Would you like to download the updates?": {
+    "a": "d",
+    "zh": "已更新 %1$lld 个应用的元数据。是否下载更新？"
+  },
+  "Native Libraries ({})": {
+    "a": "d",
+    "zh": "原生库（%1$lld）"
+  },
+  "No {} machine is saved, so nothing was deleted.": {
+    "a": "@",
+    "zh": "没有保存任何 %1$@ 机型，因此未删除任何内容。"
+  },
+  "No apps found for \"{}\".": {
+    "a": "@",
+    "zh": "未找到与“%1$@”相关的应用。"
+  },
+  "No jailbreak was found on this {}.": {
+    "a": "@",
+    "zh": "此 %1$@ 上未找到越狱。"
+  },
+  "Nothing here is called “{}”.": {
+    "a": "@",
+    "zh": "这里没有名为“%1$@”的内容。"
+  },
+  "On a computer, make this {}'s pairing file with the [StikDebug pairing-file guide](https://github.com/StikDebug/StikDebug-Guide/blob/main/pairing_file.md).": {
+    "a": "@",
+    "zh": "在电脑上，按照 [StikDebug 配对文件指南](https://github.com/StikDebug/StikDebug-Guide/blob/main/pairing_file.md) 生成此 %1$@ 的配对文件。"
+  },
+  "Open **Settings › Privacy & Security › Developer Mode**, scroll down and tap **Pair with {}**.": {
+    "a": "@",
+    "zh": "打开**设置 › 隐私与安全性 › 开发者模式**，向下滚动并轻点**与 %1$@ 配对**。"
+  },
+  "Opened {}": {
+    "a": "@",
+    "zh": "打开于 %1$@"
+  },
+  "Pair on this {}": {
+    "a": "@",
+    "zh": "在此 %1$@ 上配对"
+  },
+  "Paired on this {}.": {
+    "a": "@",
+    "zh": "已在此 %1$@ 上配对。"
+  },
+  "Paired with {}": {
+    "a": "@",
+    "zh": "已与 %1$@ 配对"
+  },
+  "Pairing code {}": {
+    "a": "@",
+    "zh": "配对码 %1$@"
+  },
+  "Paused · {} of {}": {
+    "a": "@@",
+    "zh": "已暂停 · %1$@ / %2$@"
+  },
+  "Played {}": {
+    "a": "@",
+    "zh": "游玩于 %1$@"
+  },
+  "Preparing {} files…": {
+    "a": "d",
+    "zh": "正在准备 %1$lld 个文件…"
+  },
+  "Preparing {}…": {
+    "a": "@",
+    "zh": "正在准备 %1$@…"
+  },
+  "Puts {} on your Home Screen with its own icon. Tapping it opens Husk straight into the game. Husk downloads a profile: open Settings, tap Profile Downloaded, then Install.": {
+    "a": "@",
+    "zh": "把 %1$@ 放到主屏幕并使用它自己的图标，轻点图标会直接打开 Husk 并进入游戏。Husk 会下载一个描述文件：打开设置，轻点“已下载描述文件”，然后安装。"
+  },
+  "Remove {}?": {
+    "a": "@",
+    "zh": "移除 %1$@？"
+  },
+  "Replace {}'s saves?": {
+    "a": "@",
+    "zh": "替换 %1$@ 的存档？"
+  },
+  "Reset the data of {}?": {
+    "a": "@",
+    "zh": "重置 %1$@ 的数据？"
+  },
+  "Restored {} file(s) from {}.": {
+    "a": "d@",
+    "zh": "已从 %2$@ 恢复 %1$lld 个文件。"
+  },
+  "Save it to Files, or AirDrop it to this {}.": {
+    "a": "@",
+    "zh": "将它存储到“文件”，或通过隔空投送发送到此 %1$@。"
+  },
+  "Search {} apps": {
+    "a": "d",
+    "zh": "搜索全部 %1$lld 个应用"
+  },
+  "Search to see {} more apps.": {
+    "a": "d",
+    "zh": "搜索以查看另外 %1$lld 个应用。"
+  },
+  "Starting {}…": {
+    "a": "@",
+    "zh": "正在启动 %1$@…"
+  },
+  "Starting · {}": {
+    "a": "@",
+    "zh": "正在启动 · %1$@"
+  },
+  "Stopped: {}": {
+    "a": "@",
+    "zh": "已停止：%1$@"
+  },
+  "The app called {}, a system function Husk does not provide yet.": {
+    "a": "@",
+    "zh": "应用调用了 %1$@，这是 Husk 尚未提供的系统函数。"
+  },
+  "The app needs a part of Android that Husk's runtime does not provide yet: {}.": {
+    "a": "@",
+    "zh": "应用需要 Husk 运行时尚未提供的一部分安卓功能：%1$@。"
+  },
+  "They go to {}. Unmodified APKs install from here too.": {
+    "a": "@",
+    "zh": "它们会放入 %1$@，未经修改的 APK 也可从这里安装。"
+  },
+  "TrollStore was not found on this {}. Husk can only use it once it is installed and Husk was installed through it.": {
+    "a": "@",
+    "zh": "此 %1$@ 上未找到 TrollStore。只有安装了 TrollStore 且 Husk 是通过它安装的，才能使用该方式。"
+  },
+  "Uninstall {}?": {
+    "a": "@",
+    "zh": "卸载 %1$@？"
+  },
+  "Version {}": {
+    "a": "@",
+    "zh": "版本 %1$@"
+  },
+  "Version {} · {}": {
+    "a": "@@",
+    "zh": "版本 %1$@ · %2$@"
+  },
+  "Waiting for your {}…": {
+    "a": "@",
+    "zh": "正在等待你的 %1$@…"
+  },
+  "What {} has saved now is replaced by the backup. Back up first if you want to keep it.": {
+    "a": "@",
+    "zh": "%1$@ 当前的存档将被备份替换。若想保留现有存档，请先备份。"
+  },
+  "What's New in Husk {}": {
+    "a": "@",
+    "zh": "Husk %1$@ 新功能"
+  },
+  "You have {}. The new version's IPA is on its release page.": {
+    "a": "@",
+    "zh": "你当前使用的是 %1$@，新版本的 IPA 可在其发布页面获取。"
+  },
+  "{} of {}": {
+    "a": "@@",
+    "zh": "%1$@ / %2$@"
+  },
+  "{} free on this device.": {
+    "a": "@",
+    "zh": "此设备剩余 %1$@ 可用空间。"
+  },
+  "{} has been started in this run of Husk. Close Husk and open it again to restore saves.": {
+    "a": "@",
+    "zh": "%1$@ 已在本次 Husk 运行中启动过。请关闭并重新打开 Husk 以恢复存档。"
+  },
+  "{} is still loaded and only one game can run per session. Husk closes; open it again and {} starts by itself.": {
+    "a": "@@",
+    "zh": "%1$@ 仍处于已载入状态，每次会话只能运行一款游戏。Husk 将关闭；重新打开后 %2$@ 会自动启动。"
+  },
+  "{}  ·  {}  ·  {} elapsed": {
+    "a": "@@@",
+    "zh": "%1$@  ·  %2$@  ·  已用时 %3$@"
+  },
+  "{} shared code/data pages": {
+    "a": "d",
+    "zh": "%1$lld 个共享代码/数据页"
+  },
+  "{} downloaded": {
+    "a": "@",
+    "zh": "已下载 %1$@"
+  },
+  "{} frame(s) posted · driving lifecycle": {
+    "a": "d",
+    "zh": "已提交 %1$lld 帧 · 正在驱动生命周期"
+  },
+  "{} frame(s) drawn · native runtime": {
+    "a": "d",
+    "zh": "已绘制 %1$lld 帧 · 原生运行时"
+  },
+  "{} files": {
+    "a": "d",
+    "zh": "%1$lld 个文件"
+  },
+  "{} opens by itself once Android has started.": {
+    "a": "@",
+    "zh": "安卓启动后 %1$@ 会自动打开。"
+  },
+  "{} min · first boot takes 5–15 min": {
+    "a": "d",
+    "zh": "%1$lld 分钟 · 首次启动需 5–15 分钟"
+  },
+  "{} is still loaded, and a game cannot be unloaded once it has started. Close Husk with the button above, then open it again to play {}.": {
+    "a": "@@",
+    "zh": "%1$@ 仍处于已载入状态，游戏一旦启动就无法卸载。请用上方按钮关闭 Husk，然后重新打开以游玩 %2$@。"
+  },
+  "{} was started in this session, and a game cannot be unloaded once it has started. Close Husk completely and open it again to run {}.": {
+    "a": "@@",
+    "zh": "%1$@ 已在本次会话中启动，游戏一旦启动就无法卸载。请完全关闭 Husk 再重新打开，以运行 %2$@。"
+  },
+  "{} was started in this session. Close Husk completely and open it again to run {}.": {
+    "a": "@@",
+    "zh": "%1$@ 已在本次会话中启动。请完全关闭 Husk 再重新打开，以运行 %2$@。"
+  },
+  "{} controllers": {
+    "a": "d",
+    "zh": "%1$lld 个手柄"
+  },
+  "{} relocations": {
+    "a": "d",
+    "zh": "%1$lld 处重定位"
+  },
+  "{} DEX file(s), {}": {
+    "a": "d@",
+    "zh": "%1$lld 个 DEX 文件，%2$@"
+  },
+  "{} downloading{}": {
+    "a": "d@",
+    "zh": "%1$lld 个正在下载%2$@"
+  },
+  "{} system calls": {
+    "a": "d",
+    "zh": "%1$lld 次系统调用"
+  },
+  "{} Orientation and resolution apply the next time the game starts, and a game already running in this session needs Husk closed and opened again.": {
+    "a": "@",
+    "zh": "%1$@ 方向和分辨率会在下次游戏启动时生效；本次会话中已在运行的游戏需要关闭并重新打开 Husk。"
+  },
+  "{} · {}": {
+    "a": "@@",
+    "zh": "%1$@ · %2$@"
+  },
+  "{} apps": {
+    "a": "d",
+    "zh": "%1$lld 个应用"
+  },
+  "{} thread-register reads": {
+    "a": "d",
+    "zh": "线程寄存器读取 %1$lld 次"
+  },
+  "{} (web app)": {
+    "a": "@",
+    "zh": "%1$@（网页应用）"
+  },
+  "about {} minutes remaining": {
+    "a": "d",
+    "zh": "剩余约 %1$lld 分钟"
+  },
+  "about {} seconds remaining": {
+    "a": "d",
+    "zh": "剩余约 %1$lld 秒"
+  },
+  "v{}, ready": {
+    "a": "@",
+    "zh": "v%1$@，就绪"
+  },
+  "via {}": {
+    "a": "@",
+    "zh": "通过 %1$@"
+  }
+}

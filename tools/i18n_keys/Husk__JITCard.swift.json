@@ -1,0 +1,20 @@
+[
+  "JIT is off",
+  "JIT is on",
+  "Turn On",
+  "Games and Android can run.",
+  "Turn on JIT",
+  "Turning on JIT…",
+  "TrollStore can turn JIT on for Husk: it opens Husk and enables it, with no computer. In TrollStore's Settings, URL Scheme must be on.",
+  "On a jailbroken device JIT is a setting. In Dopamine, turn on Allow JIT in Apps, then open Husk again.",
+  "StikDebug is installed, so Husk will open it to turn JIT on.",
+  "StikJIT is built into Husk. You can turn JIT on right here — no computer and no other app. Games and Android both need it.",
+  "Turn On JIT with TrollStore",
+  "How to Allow JIT",
+  "Turn On JIT with StikDebug",
+  "Turn On JIT with StikJIT",
+  "Turn On JIT",
+  "StikJIT",
+  "First time? See the setup, or use StikDebug or TrollStore instead",
+  "Games need it. \\(offered == .builtIn ? \"StikJIT\" : offered.title) turns it on."
+]

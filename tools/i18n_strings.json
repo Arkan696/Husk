@@ -1,0 +1,2626 @@
+{
+  "swiftui_static": [
+    "1280",
+    "720",
+    "ANDROID",
+    "APKs install from the Library's + button or from the Files tab. ",
+    "ATTEMPT LOG",
+    "About",
+    "About this app",
+    "Accent Colour",
+    "Active Repositories",
+    "Add",
+    "Add Download",
+    "Add Source",
+    "Add a Game or App",
+    "Add a link to an APK or a file, or the address a computer gives you when it shares a folder.",
+    "Add to Husk",
+    "Add your first game",
+    "Adds a sound device. While it is attached Android cannot be ",
+    "Adds about 2 GB to the first download. It was captured on the ",
+    "An APK is added to your library when it finishes. Anything else goes into the Shared Storage folder, which games see as their phone storage.",
+    "Android",
+    "Android App Info",
+    "Android and Translation Layer games need JIT, which on iOS only an attached debugger can grant. ",
+    "Android and Translation Layer games need JIT. StikJIT, built into Husk, turns it on without a computer.",
+    "Android apps, on your iPhone.",
+    "Android installs it from where it already is — nothing is copied.",
+    "Android reaches the internet through a virtual ethernet card ",
+    "Android runs fully emulated, so it is slower than games on the translation layer. Use it for apps ",
+    "Android will boot from cold once, then save a new one.",
+    "Android's native code expects things of the processor and of memory ",
+    "Another game is already loaded",
+    "App Icon",
+    "App Info",
+    "Appearance",
+    "Apps and games open in a window you can move, resize and minimise to a dock, like LiveContainer's multitasking. ",
+    "Architecture",
+    "Ask about Android updates",
+    "Attach the sound device",
+    "Automatic follows the system appearance — light, dark and tinted. The others pin ",
+    "Automatic offers the controller for games that cannot be played without one (Unreal Engine games), when no real ",
+    "Back",
+    "Back Up Saves",
+    "Back to Husk",
+    "Boots the guest as soon as Husk opens, when JIT is available.",
+    "Both sides must be between 240 and 2560.",
+    "Browse Files",
+    "Browse and download apps using an anonymous Aurora guest account, or sign in with your Google account.",
+    "Build",
+    "CPU",
+    "Cancel",
+    "Cancel pairing",
+    "Check setup",
+    "Choose another file",
+    "Choose pairing file",
+    "Clear Finished",
+    "Close",
+    "Close Husk",
+    "Close Husk?",
+    "Connecting to Google Play…",
+    "Console",
+    "Continue",
+    "Continue with the current pairing",
+    "Controller",
+    "Controls",
+    "Copy",
+    "Copy Package Name",
+    "Could Not Load",
+    "Crash Report",
+    "Custom",
+    "Custom resolution",
+    "Data",
+    "Delete saved machine",
+    "Developer Info",
+    "Device Checks",
+    "Discover",
+    "Display",
+    "Done",
+    "Download",
+    "Download Geode",
+    "Download pre-booted snapshot",
+    "Downloading…",
+    "Downloads",
+    "Drag a control to move it, or tap one to resize or hide it.",
+    "Emulator",
+    "Enable JIT",
+    "Enable JIT with TrollStore",
+    "Error",
+    "Everything is up to date",
+    "Featured Apps",
+    "Fetching Repositories…",
+    "Files",
+    "First time? See the setup, or use StikDebug or TrollStore instead",
+    "For apps the translation layer can't run yet",
+    "GPU",
+    "GPU machine",
+    "Game Settings",
+    "Games and Android can run.",
+    "General",
+    "Generate App Clip",
+    "Geode",
+    "Geode is the mod loader for Geometry Dash. With it on, Husk downloads Geode for this version of the ",
+    "Get",
+    "Get Android First",
+    "Google Play Store",
+    "Guest image",
+    "HUSK",
+    "Height",
+    "Hide",
+    "Hide the interface",
+    "Home",
+    "Home Screen",
+    "How each 64-bit library maps onto the iPhone: its relocations, the instructions Husk rewrites, and anything the loader works around.",
+    "How it connects",
+    "How it works",
+    "How should Husk behave?",
+    "Husk",
+    "Husk needs memory it can write and then execute, which on iOS ",
+    "Husk restores a saved machine instead of booting it, which takes ",
+    "Husk runs a real Android system and opens APKs inside it. ",
+    "Husk runs unmodified Android APKs in a real Android system on your iPhone. ",
+    "Husk was marked as debugged when it opened, so JIT is on.",
+    "If JIT is not on when Android starts, Husk turns it on with the ",
+    "Import",
+    "Import Files",
+    "Input",
+    "Install",
+    "It opens as soon as Android answers.",
+    "It's connected",
+    "Its data goes with it.",
+    "Its data goes with it. Save Android afterwards or the change is ",
+    "JIT",
+    "JIT & sideload",
+    "JIT is off",
+    "JIT is on",
+    "Keep debugger attached",
+    "Keep the network across saves",
+    "Keep the screen on",
+    "Landscape",
+    "Last Played",
+    "Last Result",
+    "Last Run",
+    "Last Used",
+    "Last lines",
+    "Library",
+    "Live Activities are off for Husk, so downloads don't show on the Lock Screen or in the Dynamic Island. Turn them on in Settings › Husk › Live Activities.",
+    "Loading Google Sign-In…",
+    "Logs",
+    "Manage Repositories",
+    "Metadata Updated",
+    "Method",
+    "Mods",
+    "Multitasking",
+    "Name",
+    "Names and icons come from Android's own launcher, which keeps ",
+    "Network",
+    "No Results",
+    "No downloads",
+    "No featured apps available. Try searching above.",
+    "Not Now",
+    "Not now",
+    "Not yet",
+    "Now",
+    "OK",
+    "Off by default. Husk detaches StikDebug as soon as the ",
+    "On-screen controller",
+    "Opacity",
+    "Open",
+    "Open Apps in Windows",
+    "Open Console",
+    "Open In",
+    "Open Settings",
+    "Open in Files",
+    "Orientation",
+    "Other Ways to Turn On JIT",
+    "Package",
+    "Paste any F-Droid-compatible repository index URL.",
+    "Performance",
+    "Performance readout",
+    "Pick an APK or a bundle (.xapk, .apkm, .apks), or share one to Husk from Files or Safari. Games run ",
+    "Portrait",
+    "Preset",
+    "Presets",
+    "Preview",
+    "Re-fetch icons",
+    "Ready",
+    "Refresh",
+    "Remove",
+    "Remove Game",
+    "Renderer",
+    "Replace",
+    "Repositories",
+    "Reset",
+    "Reset All",
+    "Reset Developer Disk Image",
+    "Reset Game Data",
+    "Resolution",
+    "Restore Saves",
+    "Run Again",
+    "Runs With",
+    "Runtime",
+    "Save automatically",
+    "Saved Machine",
+    "Saved machine",
+    "Saves",
+    "Saves, settings and caches the game made here are deleted.",
+    "Saving keeps Android exactly as it is, so the next start skips booting.",
+    "Screen",
+    "Screenshots",
+    "Search Results",
+    "Searching…",
+    "See All",
+    "Set up JIT",
+    "Settings",
+    "Share Log",
+    "Share Report",
+    "Show",
+    "Show in Android Settings",
+    "Sideloading",
+    "Sign In",
+    "Sign In with Google",
+    "Sign Out",
+    "Sign in with Google",
+    "Size",
+    "Software machine",
+    "Sound",
+    "Source URL",
+    "Start Android on launch",
+    "Start Android to uninstall or look inside the app.",
+    "Start pairing",
+    "Storage",
+    "Store",
+    "System follows the phone: light by day, dark by night. The guest's own ",
+    "Tap with three fingers to show the interface",
+    "Technical Details",
+    "Technical detail in the Android Translation Layer screens: ",
+    "The end of the log from the last time the game started. Share it when reporting a problem.",
+    "The first full release.",
+    "The game and everything it saved here are deleted from Husk.",
+    "The game starts with nothing over it: no bar, no controller, no readout. Tap with three fingers at once to bring ",
+    "The game stopped",
+    "The list is written to disk, so it is on screen before Android ",
+    "The pairing file stays in Husk's Documents folder and is only sent to Husk's own helper.",
+    "The panel is built when the machine starts, so a change costs ",
+    "The plan, in order, is docs/04-translation-layer.md in Husk's source.",
+    "The report holds the full log of that run and which device and build it was on. Nothing is sent anywhere unless you share it.",
+    "Theme",
+    "This APK has no 64-bit code Husk can run, so it will probably not start.",
+    "This iPhone",
+    "This installation can only wait about 30 seconds in the background, ",
+    "This is Geode's Android launcher. On Husk, Geode runs inside Geometry Dash instead: turn it on here ",
+    "This was removed.",
+    "Tints buttons, switches and selected states throughout the app.",
+    "To send a whole folder from a computer on the same Wi‑Fi, run this on it and enter the address it shows:",
+    "Touch always works. A gamepad and a pointer are not wired ",
+    "Touch is always on. The keyboard and the rotate control are ",
+    "Try Again",
+    "Turn On",
+    "Turn On JIT at Launch",
+    "Turn on JIT",
+    "Uninstall",
+    "Updates",
+    "Use Guest Account",
+    "Use Guest Account (Aurora)",
+    "Use Husk while an app runs",
+    "Use Husk while it starts",
+    "Use StikDebug",
+    "Use TrollStore",
+    "Use the jailbreak",
+    "Version",
+    "Vibrate on a press",
+    "View",
+    "View Release",
+    "What the game is called in Husk. The game itself is not changed.",
+    "When a new Android image or snapshot is published, Husk asks once whether to download it. ",
+    "Where it stands",
+    "Which saved machine?",
+    "Width",
+    "ctrl",
+    "https://f-droid.org/repo/index-v1.json",
+    "https://… or http://192.168.1.20:8642/",
+    "python3 serve-folder.py <folder>",
+    "serve-folder.py is in Husk's repository, under tools. The folder's contents land at the top of Shared Storage, so serve the folder that holds what a game expects there."
+  ],
+  "swiftui_interp": [
+    "A backup is a .zip of everything \\(app.label) has saved in Husk, to keep in Files or move to another device.",
+    "Enable JIT with \\(jit.resolvedMethod.title)",
+    "Enter this code on your \\(device)",
+    "Husk \\(release.version)",
+    "Husk \\(updates.available?.version ?? ",
+    "In a window, \\(app.label) runs over Husk: move it by its title bar, resize it from the corner, and minimise it to ",
+    "Install \\(installing?.name ?? ",
+    "Metadata for \\(n) of your app\\(n == 1 ? ",
+    "Native Libraries (\\(arm64.count))",
+    "No apps found for \\\"\\(debouncedSearchText)\\\".",
+    "No jailbreak was found on this \\(device).",
+    "Nothing here is called “\\(query)”.",
+    "Puts \\(app.label) on your Home Screen with its own icon. Tapping it opens Husk straight into the game. Husk ",
+    "Remove \\(app.label)?",
+    "Replace \\(app.label)'s saves?",
+    "Reset the data of \\(app.label)?",
+    "Search to see \\(apps.count - 50) more apps.",
+    "Starting \\(app.label)…",
+    "They go to \\((destination as NSString).lastPathComponent). ",
+    "TrollStore was not found on this \\(device). Husk can only use it once it is installed ",
+    "Uninstall \\(live.label)?",
+    "Version \\(Bundle.main.version)",
+    "Version \\(Bundle.main.version) · \\(Bundle.main.commit)",
+    "Waiting for your \\(device)…",
+    "What \\(app.label) has saved now is replaced by the backup. Back up first if you want to keep it.",
+    "What's New in Husk \\(WhatsNew.version)",
+    "You have \\(AppUpdates.current). The new version's IPA is on its release page.",
+    "\\(AppDetailView.bytes(s.total - s.free)) of \\(AppDetailView.bytes(s.total))",
+    "\\(Downloads.bytes(free)) free on this device.",
+    "\\(app.label) has been started in this run of Husk. Close Husk and open it again to restore saves.",
+    "\\(blockedBy ?? ",
+    "\\(items.count)",
+    "\\(live.label) opens by itself once Android has started.",
+    "\\(number)",
+    "\\(other) is still loaded, and a game cannot be unloaded once it has started. Close Husk with the ",
+    "\\(other) was started in this session, and a game cannot be unloaded once it has started. Close Husk completely and open it again to run \\(app.label).",
+    "\\(other) was started in this session. Close Husk completely and open it again to run \\(app.label).",
+    "\\(settings.resolution.detail) Orientation and resolution apply the next time the game starts, and a game already ",
+    "\\(source.apps.count) apps"
+  ],
+  "tristrings": [
+    {
+      "file": "Husk/AppDiagnosis.swift",
+      "text": "Husk app report\n        ===============\n        App      : \\(app.label) (\\(app.packageName ?? \"?\"))\n        What     : \\(d.title)\n        Why      : \\(d.detail)\n        Evidence : \\(d.evidence ?? \"-\")\n        Husk     : \\(info[\"CFBundleShortVersionString\"] as? String ?? \"?\") (\\(info[\"CFBundleVersion\"] as? String ?? \"?\"))\n        Device   : \\(HuskLog.deviceModel), \\(UIDevice.current.systemName) \\(UIDevice.current.systemVersion)\n        APKs     : \\(app.apks.map { ($0 as NSString).lastPathComponent }.joined(separator: \", \"))\n        Engine   : \\(app.report?.runnerName ?? \"?\")\n\n        ---- log of the run ----"
+    },
+    {
+      "file": "Husk/CrashReport.swift",
+      "text": "Husk crash report\n        =================\n        Game     : \\(r.game)\n        What     : \\(r.cause.title)\n        Started  : \\(r.when.map { ISO8601DateFormatter().string(from: $0) } ?? \"?\")\n        Husk     : \\(info[\"CFBundleShortVersionString\"] as? String ?? \"?\") (\\(info[\"CFBundleVersion\"] as? String ?? \"?\")) \\(info[\"HuskBuildCommit\"] as? String ?? \"\")\n        Device   : \\(HuskLog.deviceModel), \\(UIDevice.current.systemName) \\(UIDevice.current.systemVersion)"
+    },
+    {
+      "file": "Husk/HuskMetalPresenter.swift",
+      "text": "#include <metal_stdlib>\n        using namespace metal;\n\n        struct VOut { float4 pos [[position]]; float2 uv; };\n\n        struct Params { float flip; float rotate; float2 scale; };\n\n        vertex VOut husk_vertex(uint vid [[vertex_id]],\n                                constant Params &p [[buffer(0)]]) {\n            float flip = p.flip;\n            // A full-screen triangle strip, in clip space, scaled to keep the\n            // guest's aspect. Drawing edge to edge is what made a 360x800 panel\n            // look stretched the moment the screen was not that shape.\n            const float2 corners[4] = { float2(-1, -1), float2(1, -1),\n                                        float2(-1,  1), float2(1,  1) };\n            VOut o;\n            o.pos = float4(corners[vid] * p.scale, 0, 1);\n            float2 uv = corners[vid] * 0.5 + 0.5;\n            // Metal samples textures from the top-left; clip space counts y\n            // upward. That inversion is unconditional. The guest's own\n            // y_0_top then flips it back when the scanout is already top-down.\n            uv = float2(uv.x, flip > 0.5 ? uv.y : 1.0 - uv.y);\n            // A quarter turn, when the guest panel and the screen disagree.\n            //\n            // Android is a fixed 360x800 panel. Asked for landscape it rotates\n            // its own composition inside that panel rather than changing shape,\n            // so what arrives here is a portrait texture holding a sideways\n            // picture. Turning it back here is what makes it land upright on a\n            // landscape screen -- and doing it in the sampler costs nothing,\n            // because the GPU is reading the texture either way.\n            o.uv = p.rotate > 0.5 ? float2(1.0 - uv.y, uv.x) : uv;\n            return o;\n        }\n\n        fragment float4 husk_fragment(VOut in [[stage_in]],\n                                      texture2d<float> tex [[texture(0)]],\n                                      sampler smp [[sampler(0)]]) {\n            // Alpha forced opaque. Android's scanout is commonly B8G8R8X8,\n            // where the fourth byte is ignored by definition and zero in\n            // practice, and Core Animation would blend the frame away.\n            return float4(tex.sample(smp, in.uv).rgb, 1.0);\n        }"
+    },
+    {
+      "file": "Husk/WebApp.swift",
+      "text": "window.addEventListener('error', function (e) { try { window.webkit.messageHandlers.huskLog.postMessage('error: ' + e.message + ' at ' + (e.filename || '') + ':' + (e.lineno || 0) + ':' + (e.colno || 0) + ' ' + (e.error && e.error.stack || '')); } catch (x) {} });\n        window.addEventListener('unhandledrejection', function (e) { try { window.webkit.messageHandlers.huskLog.postMessage('unhandled rejection: ' + (e.reason && (e.reason.message || e.reason))); } catch (x) {} });"
+    },
+    {
+      "file": "Husk/WebApp.swift",
+      "text": "['speechSynthesis'].forEach(function (k) { try { var v = window[k]; Object.defineProperty(window, k, { value: v, writable: true, configurable: true }); } catch (x) {} });"
+    },
+    {
+      "file": "Husk/WebApp.swift",
+      "text": "window.androidBridge = { postMessage: function (s) { window.webkit.messageHandlers.huskBridge.postMessage(s); } };\n            window.Capacitor = { DEBUG: false, isLoggingEnabled: false, Plugins: {}, PluginHeaders: \\(headers) };\n            window.WEBVIEW_SERVER_URL = '\\(origin)';\n            \\(bridge)\n            window.Capacitor.PluginHeaders = \\(headers);"
+    }
+  ],
+  "all_swiftui": {
+    "It opens as soon as Android answers.": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ]
+    ],
+    "Version": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Size": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Last Used": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ]
+    ],
+    "Open in Files": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "App Info": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ]
+    ],
+    "Uninstall": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ],
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ],
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Uninstall \\(live.label)?": [
+      [
+        "Husk/AppDetailView.swift",
+        true
+      ],
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "Cancel": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ],
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ],
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ],
+      [
+        "Husk/FilesTab.swift",
+        false
+      ],
+      [
+        "Husk/IncomingFiles.swift",
+        false
+      ],
+      [
+        "Husk/Launcher.swift",
+        false
+      ],
+      [
+        "Husk/Play/GoogleSignInSheet.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Its data goes with it. Save Android afterwards or the change is ": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ]
+    ],
+    "Copy Package Name": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Show in Android Settings": [
+      [
+        "Husk/AppDetailView.swift",
+        false
+      ]
+    ],
+    "Share Report": [
+      [
+        "Husk/AppDiagnosis.swift",
+        false
+      ],
+      [
+        "Husk/CrashReport.swift",
+        false
+      ]
+    ],
+    "Close": [
+      [
+        "Husk/AppDiagnosis.swift",
+        false
+      ],
+      [
+        "Husk/AppWindows.swift",
+        false
+      ],
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ],
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ],
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ],
+      [
+        "Husk/WebAppViews.swift",
+        false
+      ]
+    ],
+    "Another game is already loaded": [
+      [
+        "Husk/AppWindows.swift",
+        false
+      ],
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ]
+    ],
+    "\\(other) was started in this session. Close Husk completely and open it again to run \\(app.label).": [
+      [
+        "Husk/AppWindows.swift",
+        true
+      ]
+    ],
+    "Starting \\(app.label)…": [
+      [
+        "Husk/AppWindows.swift",
+        true
+      ],
+      [
+        "Husk/TranslationLayer.swift",
+        true
+      ]
+    ],
+    "Show": [
+      [
+        "Husk/AppWindows.swift",
+        false
+      ],
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "HUSK": [
+      [
+        "Husk/BootScreen.swift",
+        false
+      ]
+    ],
+    "Use Husk while it starts": [
+      [
+        "Husk/BootScreen.swift",
+        false
+      ]
+    ],
+    "Home": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "Library": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/Launcher.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Store": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Settings": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Husk \\(updates.available?.version ?? ": [
+      [
+        "Husk/ContentView.swift",
+        true
+      ]
+    ],
+    "View Release": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "Not Now": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "You have \\(AppUpdates.current). The new version's IPA is on its release page.": [
+      [
+        "Husk/ContentView.swift",
+        true
+      ]
+    ],
+    "Metadata Updated": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "Download": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ],
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "Metadata for \\(n) of your app\\(n == 1 ? ": [
+      [
+        "Husk/ContentView.swift",
+        true
+      ]
+    ],
+    "Not now": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Back to Husk": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "Console": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "Logs": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "Done": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/CrashReport.swift",
+        false
+      ],
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ],
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ],
+      [
+        "Husk/FilesTab.swift",
+        false
+      ],
+      [
+        "Husk/FilesTab.swift",
+        false
+      ],
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ],
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ],
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ]
+    ],
+    "Controls": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Touch always works. A gamepad and a pointer are not wired ": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "Not yet": [
+      [
+        "Husk/ContentView.swift",
+        false
+      ]
+    ],
+    "Last lines": [
+      [
+        "Husk/CrashReport.swift",
+        false
+      ]
+    ],
+    "The report holds the full log of that run and which device and build it was on. Nothing is sent anywhere unless you share it.": [
+      [
+        "Husk/CrashReport.swift",
+        false
+      ]
+    ],
+    "Crash Report": [
+      [
+        "Husk/CrashReport.swift",
+        false
+      ]
+    ],
+    "Fetching Repositories…": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Discover": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Refresh": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ],
+      [
+        "Husk/FilesTab.swift",
+        false
+      ]
+    ],
+    "Add Source": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ],
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Manage Repositories": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Repositories": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ],
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Could Not Load": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Search to see \\(apps.count - 50) more apps.": [
+      [
+        "Husk/DiscoverTab.swift",
+        true
+      ]
+    ],
+    "Open": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Get": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "https://f-droid.org/repo/index-v1.json": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Source URL": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Paste any F-Droid-compatible repository index URL.": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Presets": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "Add": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ],
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "\\(source.apps.count) apps": [
+      [
+        "Husk/DiscoverTab.swift",
+        true
+      ]
+    ],
+    "Active Repositories": [
+      [
+        "Husk/DiscoverTab.swift",
+        false
+      ]
+    ],
+    "No downloads": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "Add a link to an APK or a file, or the address a computer gives you when it shares a folder.": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "Remove": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Downloads": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ],
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ],
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "Clear Finished": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "Live Activities are off for Husk, so downloads don't show on the Lock Screen or in the Dynamic Island. Turn them on in Settings › Husk › Live Activities.": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "\\(Downloads.bytes(free)) free on this device.": [
+      [
+        "Husk/DownloadsTab.swift",
+        true
+      ]
+    ],
+    "Updates": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "Husk \\(release.version)": [
+      [
+        "Husk/DownloadsTab.swift",
+        true
+      ]
+    ],
+    "View": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "Everything is up to date": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "https://… or http://192.168.1.20:8642/": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "An APK is added to your library when it finishes. Anything else goes into the Shared Storage folder, which games see as their phone storage.": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "To send a whole folder from a computer on the same Wi‑Fi, run this on it and enter the address it shows:": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "python3 serve-folder.py <folder>": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "serve-folder.py is in Husk's repository, under tools. The folder's contents land at the top of Shared Storage, so serve the folder that holds what a game expects there.": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "How it works": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "Add Download": [
+      [
+        "Husk/DownloadsTab.swift",
+        false
+      ]
+    ],
+    "Import": [
+      [
+        "Husk/FilesTab.swift",
+        false
+      ],
+      [
+        "Husk/FilesTab.swift",
+        false
+      ]
+    ],
+    "Install \\(installing?.name ?? ": [
+      [
+        "Husk/FilesTab.swift",
+        true
+      ]
+    ],
+    "Install": [
+      [
+        "Husk/FilesTab.swift",
+        false
+      ]
+    ],
+    "Android installs it from where it already is — nothing is copied.": [
+      [
+        "Husk/FilesTab.swift",
+        false
+      ]
+    ],
+    "Storage": [
+      [
+        "Husk/FilesTab.swift",
+        false
+      ]
+    ],
+    "\\(AppDetailView.bytes(s.total - s.free)) of \\(AppDetailView.bytes(s.total))": [
+      [
+        "Husk/FilesTab.swift",
+        true
+      ]
+    ],
+    "Import Files": [
+      [
+        "Husk/FilesTab.swift",
+        false
+      ]
+    ],
+    "They go to \\((destination as NSString).lastPathComponent). ": [
+      [
+        "Husk/FilesTab.swift",
+        true
+      ]
+    ],
+    "Browse Files": [
+      [
+        "Husk/FilesTab.swift",
+        false
+      ]
+    ],
+    "ctrl": [
+      [
+        "Husk/HuskKeyboard.swift",
+        false
+      ]
+    ],
+    "Add to Husk": [
+      [
+        "Husk/IncomingFiles.swift",
+        false
+      ]
+    ],
+    "This is Geode's Android launcher. On Husk, Geode runs inside Geometry Dash instead: turn it on here ": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "\\(other) is still loaded, and a game cannot be unloaded once it has started. Close Husk with the ": [
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "This APK has no 64-bit code Husk can run, so it will probably not start.": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Last Run": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/TechnicalDetails.swift",
+        false
+      ]
+    ],
+    "Screenshots": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Game Settings": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Technical Details": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/TechnicalDetails.swift",
+        false
+      ]
+    ],
+    "Back Up Saves": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Restore Saves": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Saves": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "\\(app.label) has been started in this run of Husk. Close Husk and open it again to restore saves.": [
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "A backup is a .zip of everything \\(app.label) has saved in Husk, to keep in Files or move to another device.": [
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "About": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Runs With": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Last Result": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Last Played": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Remove Game": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Replace \\(app.label)'s saves?": [
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "Replace": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "What \\(app.label) has saved now is replaced by the backup. Back up first if you want to keep it.": [
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "Close Husk?": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Close Husk": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "\\(blockedBy ?? ": [
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "Remove \\(app.label)?": [
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "The game and everything it saved here are deleted from Husk.": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "\\(live.label) opens by itself once Android has started.": [
+      [
+        "Husk/ItemPages.swift",
+        true
+      ]
+    ],
+    "Package": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/TechnicalDetails.swift",
+        false
+      ]
+    ],
+    "Architecture": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Android App Info": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Start Android to uninstall or look inside the app.": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Its data goes with it.": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Get Android First": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Files": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Saving keeps Android exactly as it is, so the next start skips booting.": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Performance": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Input": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Network": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Saved Machine": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Android runs fully emulated, so it is slower than games on the translation layer. Use it for apps ": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ]
+    ],
+    "Android": [
+      [
+        "Husk/ItemPages.swift",
+        false
+      ],
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "JIT is off": [
+      [
+        "Husk/JITCard.swift",
+        false
+      ]
+    ],
+    "Turn On": [
+      [
+        "Husk/JITCard.swift",
+        false
+      ]
+    ],
+    "JIT is on": [
+      [
+        "Husk/JITCard.swift",
+        false
+      ]
+    ],
+    "Games and Android can run.": [
+      [
+        "Husk/JITCard.swift",
+        false
+      ]
+    ],
+    "Turn on JIT": [
+      [
+        "Husk/JITCard.swift",
+        false
+      ],
+      [
+        "Husk/OnboardingView.swift",
+        false
+      ]
+    ],
+    "First time? See the setup, or use StikDebug or TrollStore instead": [
+      [
+        "Husk/JITCard.swift",
+        false
+      ]
+    ],
+    "Continue with the current pairing": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Start pairing": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Cancel pairing": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Continue": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ],
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ],
+      [
+        "Husk/WhatsNew.swift",
+        false
+      ]
+    ],
+    "Waiting for your \\(device)…": [
+      [
+        "Husk/JITSetupView.swift",
+        true
+      ]
+    ],
+    "Open Settings": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "This installation can only wait about 30 seconds in the background, ": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Enter this code on your \\(device)": [
+      [
+        "Husk/JITSetupView.swift",
+        true
+      ]
+    ],
+    "The pairing file stays in Husk's Documents folder and is only sent to Husk's own helper.": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Choose another file": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Choose pairing file": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "It's connected": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Reset Developer Disk Image": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Enable JIT": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Check setup": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Use StikDebug": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "TrollStore was not found on this \\(device). Husk can only use it once it is installed ": [
+      [
+        "Husk/JITSetupView.swift",
+        true
+      ]
+    ],
+    "Use TrollStore": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "Husk was marked as debugged when it opened, so JIT is on.": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "No jailbreak was found on this \\(device).": [
+      [
+        "Husk/JITSetupView.swift",
+        true
+      ]
+    ],
+    "Use the jailbreak": [
+      [
+        "Husk/JITSetupView.swift",
+        false
+      ]
+    ],
+    "\\(number)": [
+      [
+        "Husk/JITSetupView.swift",
+        true
+      ]
+    ],
+    "Husk": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ],
+      [
+        "Husk/OnboardingView.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "For apps the translation layer can't run yet": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "Add your first game": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "Pick an APK or a bundle (.xapk, .apkm, .apks), or share one to Husk from Files or Safari. Games run ": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "Add a Game or App": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "See All": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "ANDROID": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "\\(items.count)": [
+      [
+        "Husk/Launcher.swift",
+        true
+      ]
+    ],
+    "No Results": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "Nothing here is called “\\(query)”.": [
+      [
+        "Husk/Launcher.swift",
+        true
+      ]
+    ],
+    "This was removed.": [
+      [
+        "Husk/Launcher.swift",
+        false
+      ]
+    ],
+    "Android apps, on your iPhone.": [
+      [
+        "Husk/OnboardingView.swift",
+        false
+      ]
+    ],
+    "Husk runs a real Android system and opens APKs inside it. ": [
+      [
+        "Husk/OnboardingView.swift",
+        false
+      ]
+    ],
+    "How should Husk behave?": [
+      [
+        "Husk/OnboardingView.swift",
+        false
+      ]
+    ],
+    "Android and Translation Layer games need JIT, which on iOS only an attached debugger can grant. ": [
+      [
+        "Husk/OnboardingView.swift",
+        false
+      ]
+    ],
+    "Ready": [
+      [
+        "Husk/OnboardingView.swift",
+        false
+      ]
+    ],
+    "If JIT is not on when Android starts, Husk turns it on with the ": [
+      [
+        "Husk/OnboardingView.swift",
+        false
+      ]
+    ],
+    "Loading Google Sign-In…": [
+      [
+        "Husk/Play/GoogleSignInSheet.swift",
+        false
+      ]
+    ],
+    "Sign in with Google": [
+      [
+        "Husk/Play/GoogleSignInSheet.swift",
+        false
+      ]
+    ],
+    "Connecting to Google Play…": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Sign Out": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Use Guest Account (Aurora)": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Sign In with Google": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ],
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Sign In": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Error": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "OK": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Google Play Store": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Browse and download apps using an anonymous Aurora guest account, or sign in with your Google account.": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Use Guest Account": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Searching…": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "No apps found for \\\"\\(debouncedSearchText)\\\".": [
+      [
+        "Husk/Play/StoreView.swift",
+        true
+      ]
+    ],
+    "Search Results": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Featured Apps": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "No featured apps available. Try searching above.": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Preview": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "About this app": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "Downloading…": [
+      [
+        "Husk/Play/StoreView.swift",
+        false
+      ]
+    ],
+    "JIT": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Android and Translation Layer games need JIT. StikJIT, built into Husk, turns it on without a computer.": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "General": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Open Apps in Windows": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Use Husk while an app runs": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Multitasking": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Apps and games open in a window you can move, resize and minimise to a dock, like LiveContainer's multitasking. ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Emulator": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Version \\(Bundle.main.version) · \\(Bundle.main.commit)": [
+      [
+        "Husk/SettingsTab.swift",
+        true
+      ]
+    ],
+    "The list is written to disk, so it is on screen before Android ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Re-fetch icons": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Names and icons come from Android's own launcher, which keeps ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Renderer": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "GPU": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "CPU": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Now": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Sound": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Attach the sound device": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Adds a sound device. While it is attached Android cannot be ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Screen": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Portrait": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Landscape": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Custom resolution": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Preset": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Custom": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Width": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "720": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Height": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "1280": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Both sides must be between 240 and 2560.": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Resolution": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "The panel is built when the machine starts, so a change costs ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Touch is always on. The keyboard and the rotate control are ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Keep the network across saves": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Android reaches the internet through a virtual ethernet card ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "How it connects": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Method": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Set up JIT": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Other Ways to Turn On JIT": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Enable JIT with \\(jit.resolvedMethod.title)": [
+      [
+        "Husk/SettingsTab.swift",
+        true
+      ]
+    ],
+    "Enable JIT with TrollStore": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Husk needs memory it can write and then execute, which on iOS ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Turn On JIT at Launch": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Start Android on launch": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Boots the guest as soon as Husk opens, when JIT is available.": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Keep debugger attached": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Off by default. Husk detaches StikDebug as soon as the ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "APKs install from the Library's + button or from the Files tab. ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Sideloading": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "JIT & sideload": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Save automatically": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Husk restores a saved machine instead of booting it, which takes ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Delete saved machine": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Download pre-booted snapshot": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Adds about 2 GB to the first download. It was captured on the ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Ask about Android updates": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "When a new Android image or snapshot is published, Husk asks once whether to download it. ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Saved machine": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Which saved machine?": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "GPU machine": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Software machine": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Android will boot from cold once, then save a new one.": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Appearance": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Theme": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "System follows the phone: light by day, dark by night. The guest's own ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Accent Colour": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Tints buttons, switches and selected states throughout the app.": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "App Icon": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Automatic follows the system appearance — light, dark and tinted. The others pin ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Version \\(Bundle.main.version)": [
+      [
+        "Husk/SettingsTab.swift",
+        true
+      ]
+    ],
+    "Build": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Guest image": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Developer Info": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Technical detail in the Android Translation Layer screens: ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Device Checks": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ],
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "Open Console": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Husk runs unmodified Android APKs in a real Android system on your iPhone. ": [
+      [
+        "Husk/SettingsTab.swift",
+        false
+      ]
+    ],
+    "Name": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "What the game is called in Husk. The game itself is not changed.": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Orientation": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Performance readout": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Keep the screen on": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Display": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "\\(settings.resolution.detail) Orientation and resolution apply the next time the game starts, and a game already ": [
+      [
+        "Husk/TLAppSettings.swift",
+        true
+      ]
+    ],
+    "Open In": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "In a window, \\(app.label) runs over Husk: move it by its title bar, resize it from the corner, and minimise it to ": [
+      [
+        "Husk/TLAppSettings.swift",
+        true
+      ]
+    ],
+    "Hide the interface": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "The game starts with nothing over it: no bar, no controller, no readout. Tap with three fingers at once to bring ": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Geode": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ],
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Mods": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Geode is the mod loader for Geometry Dash. With it on, Husk downloads Geode for this version of the ": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "On-screen controller": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Opacity": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Vibrate on a press": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Controller": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Automatic offers the controller for games that cannot be played without one (Unreal Engine games), when no real ": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Generate App Clip": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Home Screen": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Puts \\(app.label) on your Home Screen with its own icon. Tapping it opens Husk straight into the game. Husk ": [
+      [
+        "Husk/TLAppSettings.swift",
+        true
+      ]
+    ],
+    "Reset Game Data": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ],
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Data": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Reset the data of \\(app.label)?": [
+      [
+        "Husk/TLAppSettings.swift",
+        true
+      ]
+    ],
+    "Saves, settings and caches the game made here are deleted.": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Download Geode": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "Try Again": [
+      [
+        "Husk/TLAppSettings.swift",
+        false
+      ]
+    ],
+    "\\(other) was started in this session, and a game cannot be unloaded once it has started. Close Husk completely and open it again to run \\(app.label).": [
+      [
+        "Husk/TLUnityView.swift",
+        true
+      ]
+    ],
+    "Tap with three fingers to show the interface": [
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ],
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "Reset": [
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ]
+    ],
+    "Drag a control to move it, or tap one to resize or hide it.": [
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ]
+    ],
+    "Reset All": [
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ]
+    ],
+    "Back": [
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ],
+      [
+        "Husk/WebAppViews.swift",
+        false
+      ]
+    ],
+    "Hide": [
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ],
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "ATTEMPT LOG": [
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ]
+    ],
+    "Copy": [
+      [
+        "Husk/TLUnityView.swift",
+        false
+      ]
+    ],
+    "Runtime": [
+      [
+        "Husk/TechnicalDetails.swift",
+        false
+      ]
+    ],
+    "Native Libraries (\\(arm64.count))": [
+      [
+        "Husk/TechnicalDetails.swift",
+        true
+      ]
+    ],
+    "How each 64-bit library maps onto the iPhone: its relocations, the instructions Husk rewrites, and anything the loader works around.": [
+      [
+        "Husk/TechnicalDetails.swift",
+        false
+      ]
+    ],
+    "Share Log": [
+      [
+        "Husk/TechnicalDetails.swift",
+        false
+      ]
+    ],
+    "The end of the log from the last time the game started. Share it when reporting a problem.": [
+      [
+        "Husk/TechnicalDetails.swift",
+        false
+      ]
+    ],
+    "This iPhone": [
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "Android's native code expects things of the processor and of memory ": [
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "Where it stands": [
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "The plan, in order, is docs/04-translation-layer.md in Husk's source.": [
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "The game stopped": [
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "Run Again": [
+      [
+        "Husk/TranslationLayer.swift",
+        false
+      ]
+    ],
+    "What's New in Husk \\(WhatsNew.version)": [
+      [
+        "Husk/WhatsNew.swift",
+        true
+      ]
+    ],
+    "The first full release.": [
+      [
+        "Husk/WhatsNew.swift",
+        false
+      ]
+    ]
+  }
+}

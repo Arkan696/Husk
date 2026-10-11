@@ -1,0 +1,8 @@
+[
+  "Done",
+  "Stopped. Open Husk to retry.",
+  "\\(f.string(fromByteCount: s.total)) downloaded",
+  "\\(f.string(fromByteCount: s.received)) of \\(f.string(fromByteCount: s.total))",
+  " · \\(f.string(fromByteCount: Int64(s.speed)))/s",
+  " · \\(s.filesDone)/\\(s.filesTotal) files"
+]

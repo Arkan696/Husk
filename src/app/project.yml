@@ -1,4 +1,8 @@
 name: Husk
+# English is the source language; Localizable.xcstrings also ships a zh-Hans
+# (Simplified Chinese) translation. XcodeGen/Xcode derive knownRegions from the
+# String Catalog, and xcstringstool emits a zh-Hans.lproj in each target's bundle.
+developmentRegion: en
 options:
   bundleIdPrefix: com.husk
   deploymentTarget:
@@ -103,15 +107,6 @@ targets:
           # WebKit draws Java apps' android.webkit.WebView (WKWebView under the app's screen).
           - "-framework"
           - "WebKit"
-          # VideoToolbox (with CoreMedia and CoreVideo) decodes H.264/HEVC for Java apps' MediaCodec; Accelerate converts the frames.
-          - "-framework"
-          - "VideoToolbox"
-          - "-framework"
-          - "CoreMedia"
-          - "-framework"
-          - "CoreVideo"
-          - "-framework"
-          - "Accelerate"
           # Security verifies the licence signature Minecraft's UI engine checks through Java's Signature class.
           - "-framework"
           - "Security"
@@ -292,6 +287,10 @@ targets:
     sources:
       - path: HuskDownloadsWidget
       - path: Shared
+      # The widget is a separate bundle, so it must compile the shared String
+      # Catalog itself (as a resource) for its Chinese strings to resolve.
+      - path: Husk/Localizable.xcstrings
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: $(HUSK_BUNDLE_IDENTIFIER).Downloads
