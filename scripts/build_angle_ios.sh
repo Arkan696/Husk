@@ -60,6 +60,11 @@ angle_build () {
         ldflags=("OTHER_LDFLAGS=\$(inherited) -Wl,-alias_list,$1")
     fi
 
+    # Xcode 26 自带的 clang 把「对 std::mutex 使用 acquire_capability /
+    # release_capability」的线程安全诊断从警告升级成了错误，而 WebKit 的 ANGLE
+    # 工程开着 -Werror，于是 SimpleMutex.h 直接编不过。这里把这两个诊断关掉。
+    # 用 -Wno-（整组禁用）而不是 -Wno-error=：诊断一旦被禁用，后面无论哪个
+    # -Werror 都无从升级，ordering 上也更稳。
     env -i PATH="$PATH" HOME="$HOME" xcodebuild archive \
         -archivePath "ANGLE" -scheme "ANGLE" \
         -sdk iphoneos -arch arm64 -configuration Release \
@@ -67,12 +72,12 @@ angle_build () {
         CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
         WK_AVAILABILITY_OVERLAY_FLAGS="" WK_AVAILABILITY_OVERLAY_SWIFT_FLAGS="" \
         IPHONEOS_DEPLOYMENT_TARGET="15.5" \
-        OTHER_CFLAGS='$(inherited) -Wno-unguarded-availability-new' \
-        OTHER_CPLUSPLUSFLAGS='$(inherited) -Wno-unguarded-availability-new' \
+        OTHER_CFLAGS='$(inherited) -Wno-unguarded-availability-new -Wno-thread-safety-attributes -Wno-thread-safety-analysis' \
+        OTHER_CPLUSPLUSFLAGS='$(inherited) -Wno-unguarded-availability-new -Wno-thread-safety-attributes -Wno-thread-safety-analysis' \
         ${ldflags[@]+"${ldflags[@]}"} \
         > "$LOG" 2>&1 \
       || { echo "ANGLE build failed; last errors:" >&2
-           grep -a "error:\|^ld: " "$LOG" | head -10 >&2; exit 1; }
+           grep -a "error:\|^ld: " "$LOG" | head -40 >&2; exit 1; }
 }
 
 # Two passes, because of a name mismatch.
